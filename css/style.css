@@ -238,6 +238,7 @@ h1, h2 {
     font-size: 1.5rem;
     line-height: 1.2;
     margin-top: 2rem;
+    text-transform: uppercase;
 }
 .comprehensivepatient .content {
     font-size: 1.125rem;
