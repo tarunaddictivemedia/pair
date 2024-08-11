@@ -307,35 +307,35 @@
 	  dots: false
 	});
 	document.addEventListener('DOMContentLoaded', () => {
-    // Initialize ScrollMagic Controller
-    let controller = new ScrollMagic.Controller();
+	    // Initialize ScrollMagic Controller
+	    let controller = new ScrollMagic.Controller();
 
-    // Create GSAP timeline
-    let timeline = gsap.timeline();
+	    // Create GSAP timeline
+	    let timeline = gsap.timeline();
 
-    // Text rotation animations
-    timeline
-        .to('.text2, .content2', { opacity: 1, duration: 1 })
-        .to('.text1, .content1', { opacity: 0, duration: 1 }, "-=1")
-        .to('.text3, .content3', { opacity: 1, duration: 1 })
-        .to('.text2, .content2', { opacity: 0, duration: 1 }, "-=1")
-        .to('.text4, .content4', { opacity: 1, duration: 1 })
-        .to('.text3, .content3', { opacity: 0, duration: 1 }, "-=1")
-        .to('.text5, .content5', { opacity: 1, duration: 1 })
-        .to('.text4, .content4', { opacity: 0, duration: 1 }, "-=1");
+	    // Text rotation animations
+	    timeline
+	        .to('.text2, .content2', { opacity: 1, duration: 2 }) // Increased duration
+	        .to('.text1, .content1', { opacity: 0, duration: 2 }, "-=1.5") // Increased duration with overlap
+	        .to('.text3, .content3', { opacity: 1, duration: 2 }) // Increased duration
+	        .to('.text2, .content2', { opacity: 0, duration: 2 }, "-=1.5") // Increased duration with overlap
+	        .to('.text4, .content4', { opacity: 1, duration: 2 }) // Increased duration
+	        .to('.text3, .content3', { opacity: 0, duration: 2 }, "-=1.5") // Increased duration with overlap
+	        .to('.text5, .content5', { opacity: 1, duration: 2 }) // Increased duration
+	        .to('.text4, .content4', { opacity: 0, duration: 2 }, "-=1.5"); // Increased duration with overlap
 
-    // Attach the timeline to a ScrollMagic scene
-    new ScrollMagic.Scene({
-        triggerElement: ".Interoperabilitysec", // Trigger when .Interoperabilitysec enters the viewport
-        duration: 1900,
-        triggerHook: 0,
-        offset: 0,
-    })
-    
-    .setTween(timeline)
-    .setPin('.Interoperabilitysec')
-    .addTo(controller); // Add the scene to the controller
-});
+	    // Attach the timeline to a ScrollMagic scene
+	    new ScrollMagic.Scene({
+	        triggerElement: ".Interoperabilitysec", // Trigger when .Interoperabilitysec enters the viewport
+	        duration: 3000, // Increased duration for slower scroll animation
+	        triggerHook: 0,
+	        offset: 0,
+	    })
+	    .setTween(timeline)
+	    .setPin('.Interoperabilitysec')
+	    .addTo(controller); // Add the scene to the controller
+	});
+
 
 // Menu Open 
 $('.menutriger').click(function(){
