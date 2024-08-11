@@ -1,0 +1,910 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+
+*,:after,:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 16px;
+}
+html, body {
+    overflow-x: hidden;
+}
+body {
+    background-color: #fff;
+    color: #747474;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0 auto !important;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    max-width: 100%;
+}
+a, a img, img {
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+ul  {
+    list-style: none;
+    padding-left: 0
+}
+.container {
+    max-width: 107.688rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.col-2 {
+    width: 20%;box-sizing: border-box;
+}
+.col-6 {
+    width: 60%;box-sizing: border-box;
+}
+.col-5 {
+    width: 50%;box-sizing: border-box;
+}
+.col-3 {
+    width: 30%;box-sizing: border-box;
+}
+.col-4 {
+    width: 40%;box-sizing: border-box;
+}
+.col-45 {
+    width: 45%;box-sizing: border-box;
+}
+.col-7 {
+    width: 70%;box-sizing: border-box;
+}
+.col-half {
+    width: 50%;box-sizing: border-box;
+}
+.col-third {
+    width: calc(100% / 3);box-sizing: border-box;
+}
+.col-forth {
+    width: calc(100% / 4);box-sizing: border-box;
+}
+/*Header css*/
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+header {
+    padding-top: 4rem;
+}
+header .logo img {
+    max-width: 13.313rem;
+}
+.button .btn {
+    background: #6365b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.563rem;
+    height: 3.375rem;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 1.125rem;
+}
+.button .btn:hover svg.tlbtnbox {
+    display: block !important;
+}
+svg.tlbtnbox {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100% !important;
+    z-index: -1;
+}
+.button .btn:hover {
+    background: transparent;
+}
+.button .btn svg.arrows {
+    right: -12px;
+    position: relative;
+}
+.navbar ul li {
+    margin-left: 2.375rem;
+}
+.navbar ul li .button svg {
+    width: 3.375rem;
+    height: 3.375rem;
+}
+.navbar ul li .button .btn svg {
+    width: 2.375rem;
+    height: 2.375rem;
+}
+.mainbanner {
+    height: 100vh;
+    margin-top: -9.725rem;
+}
+.bookdemopopupinnr .button.close svg {
+    width: 100%;
+}
+.bookdemopopupinnr .button.close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+.mainbanner .container {
+    height: 100%;
+}
+.bgprop {background-position: center;background-size: cover;}
+
+/*Banner css*/
+.mainbanner .row {
+    align-items: center;
+    height: 100%;
+}
+h1, h2 {
+    font-size: 4.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.contentbanner {
+    max-width: 61.75rem;
+    padding-top: 8rem;
+}
+.contentbanner h1 {
+    margin-bottom: 4.25rem;
+    color: #103151;
+}
+.button.menutriger:hover svg circle {
+    fill: #103151;
+}
+.btndesign2 {
+    background: #6365b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.563rem;
+    height: 3.375rem;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.125rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.btndesign2:hover {background: #103151;}
+/*aiintergated Css*/
+.aiintergated h2, .comprehensivepatient .heading h2 {
+    color: #6365B8;
+}
+.aiintergated {
+    background-color: #103151;
+    padding: 7.125rem 0;
+}
+.equalpd {
+    padding: 7.125rem 0;
+}
+.aicontent p {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.4;
+}
+/*comprehensivepatient css*/
+.comprehensivepatient .iconbox ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6.75rem;
+}
+.comprehensivepatient .iconbox ul li {
+    width: calc(100% / 5);
+}
+.comprehensivepatient .iconbox ul li .linnr {
+    text-align: center;
+}
+.comprehensivepatient .iconbox ul li .icon {
+    width: 10.875rem;
+    height: 10.5rem;
+    text-align: center;
+    margin: 0 auto 0.188rem;
+}
+.comprehensivepatient .iconbox ul li .icon img {
+    width: 100%;
+    margin: 0 auto;
+}
+.comprehensivepatient .iconbox ul li .content p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
+.comprehensivepatient .content {
+    font-size: 1.125rem;
+}
+/*aifasterefficentsec CSS*/
+.aifasterefficentsec .imganimation {
+    max-width: 79.375rem;
+    margin: 0 auto;
+}
+.aifasterefficentsec .imganimation img {
+    width: 100%;
+}
+.aifasterefficentslider {
+    padding-left: 10.313rem;
+}
+.aifasterefficentsec {
+    background-color: #F8F8F5;
+}
+.aifasterefficentslide {
+    height: 20.25rem;
+    padding: 1.25rem;
+}
+.aifasterefficentslideinnr {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3.563rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.aifasterefficentslideinnr p {display: none;z-index: 1;position: relative;font-size: 1.125rem; margin-bottom: 1.5rem;}
+.aifasterefficentslideinnr h4 {
+    color: #6365B8;
+    font-size: 3rem;
+    font-weight: normal;
+    max-width: 23.688rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+.aifasterefficentslide .aifasterefficentslideinnr:hover p {
+    display: block;
+}
+.aifasterefficentslideinnr:hover .imghover {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.aifasterefficentslideinnr .imghover img {
+    width: 100%;
+    height: 100%;
+}
+.aifasterefficentslideinnr .imghover {
+    z-index: 0;
+}
+.aifasterefficentslideinnr:hover h4 {color: #A0CAF0;}
+.aifasterefficentslideinnr:hover p {
+    color: #fff;
+}
+.aifasterefficentsec .heading h2 {
+    font-size: 12.5rem;
+    line-height: 1.4;
+    padding: 7.5rem 0 7.5rem 6.37rem;
+    color: #000;
+}
+/*heathidcardwithabhasec CSS*/
+.heathidcardwithabhasec .aifasterefficentslider {padding-left: 0;padding-top: 7.75rem;}
+.heathidcardwithabhasec { background-color : #F8F8F5;}
+.heathidcardwithabhasec .headingcntnt h4 {
+    font-size: 3rem;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+.heathidcardwithabhasec .row {
+    justify-content: space-between;
+}
+.heathidcardwithabhasec .headingcntnt small {
+    color: #6365B8;
+    font-size: 1.875rem;
+    margin-bottom: 2.125rem;
+    display: block;
+}
+p {
+    font-size: 1.125rem;
+    color: #000;
+}
+.easysteps ul li {
+    padding-top: 2.375rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000;
+}
+.easysteps ul li .linnr {
+    display: flex;
+    align-items: center;
+}
+.easysteps ul li .linnr span.count {
+    color: #6365B8;
+    margin-right: 2rem;
+    font-size: 4.75rem;
+    font-weight: 200;
+}
+/*Trust leading Css*/
+.trustedleadingsec .heading {
+    max-width: 49.125rem;
+}
+.trustedleadingsec .heading h2 {
+    color: #6365B8;
+    font-weight: 300;
+    margin-bottom: 6.25rem;
+}
+.trustedlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.5rem 0 12.5rem;
+}
+.trustedlogo .trustedlogocol {
+    width: calc(100% / 5);
+    text-align: center;
+}
+
+.trustedlogo .trustedlogocol .innvoaterlogo {
+    width: 9.188rem;
+    height: 9.188rem;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+.trustedlogo .trustedlogocol .innvoaterlogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.trustedleadingsec .btngrp {
+    text-align: right;
+}
+.trustedleadingsec .btngrp a.btn.btndesign2 {
+    margin-right: 0;
+    margin-left: auto;
+}
+.trustedlogo .trustedlogocol .innvoaterlogo:hover {
+    filter: none;
+}
+.trustedleadingsec {
+    background-position: 0% 94%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.trustedleadingsec hr {
+    margin: 10rem 0;
+    background: #6365B8;
+    height: 1px;
+}
+.clientreviewcolinnr {
+    width: 60%;
+    margin: 0 auto;
+}
+.clientreviewcol {
+    text-align: center;
+}
+.clientreviewcolinnr .photo {
+    width: 13.313rem;
+    height: 13.313rem;
+    margin: 0 auto 1.563rem;
+}
+.clientreviewcolinnr .photo img {
+    width: 100%;
+    height: 100%;
+}
+.review h6 {
+    color: #000;
+    font-size: 1.813rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+.review .desitination {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    color: #000;
+}
+.review p {
+    color: #000;
+    font-size: 1.813rem;
+    font-weight: normal;
+}
+.faqaccordion h4 {
+    font-size: 1.875rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #DCD7D3;
+    font-weight: normal;
+    color: #000;
+}
+.faqcontent p {
+    line-height: 1.4;
+    padding: 1rem 0;
+}
+.faqaccordion h4 .icon {
+    color: #6365B8;
+    float: right;
+    margin-right: 1rem;
+}
+/*Footer below CSS*/
+.footebelowsec .marquee p {
+    color: #000000;
+    font-size: 12.5rem;
+    white-space: nowrap;
+    padding: 2rem 0 4rem;
+}
+.footerlogo img {
+    max-width: 10.313rem;
+    margin-bottom: 5.25rem;
+}
+footer .footermenu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.688rem;
+    padding-bottom: 1.688rem;
+    border-bottom: 1px solid #DCD7D3;
+}
+footer .footermenu .leftcol {
+    width: 100%;
+}
+footer .footermenu .leftcol ul, .footerbottom ul {
+    display: flex;
+}
+footer .footermenu .leftcol ul li a {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.footerbottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.footerbottom .bottomurlleft {
+    width: 50%;
+}
+.footerbottom .bottomurlright {
+    width: 50%;
+}
+.footerbottom .bottomurlright ul {
+    justify-content: right;
+}
+.footerbottom ul li a {color: #000000;font-size: 1.125rem;margin-right: 2rem;text-decoration: none;}
+.footerbottom ul li:last-child a {
+    margin-left: 0;
+    margin-right: 0px;
+}
+.footermenu .rightcol .btnbox .btn svg {
+    width: 2.375rem;
+    height: 2.375rem;
+}
+.footermenu .rightcol .btnbox .btn {
+    background: #6365b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.563rem;
+    height: 3.375rem;
+    border-radius: 30px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 1.125rem;
+}
+.footermenu .rightcol .btnbox .btn .arrows{right: -11px;    position: relative;}
+.footermenu .rightcol .btnbox .btn:hover svg.tlbtnbox {display: block !important;}
+.footermenu .rightcol .btnbox .btn:hover {background: transparent;}
+/*Feature Css*/
+.fastereasirbg p {
+    color: #000;
+}
+.Interoperabilitysec .content p {
+    font-size: 1.875rem;
+}
+.Interoperabilitysec {
+    height: 80vh;
+}
+.Interoperabilitysec .container {height: 100%;}
+.Interoperabilitysec .row {height: 100%;align-items: center;}
+.Interoperabilitysec h2 {
+    color: #6365B8;
+}
+img {
+    max-width: 100%;
+}
+.aiintergated .row {align-items: center;}
+.Interoperabilitysec h2.text {
+    position: absolute;
+    bottom: -60px;
+}
+.Interoperabilitysec .heading {
+    position: relative;
+    width: 100%;
+    transform: translate(0px, 30%);
+}
+.Interoperabilitysec .heading .imgicon {
+    margin-bottom: 70px;
+}
+.Interoperabilitysec .contentdb {
+    position: absolute;
+    top: 40%;
+}
+.aicontent p span, .aifasterefficentsec .heading h2 span {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.Interoperabilitysec .content {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    transform: translate(0px, -6.375rem);
+}
+.faqcontent {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.faqaccordion h4 {
+    cursor: pointer;
+}
+/*Menu*/
+.navbarmenu {
+    right: -100%;
+    position: fixed;
+    top: 0;
+    background: #103151;
+    height: 100%;
+    width: 28rem;
+    z-index: 9;
+    transition: 0.5s all ease-out;
+}
+.navbarmenuinnr {
+    height: 100%;
+    width: 100%;
+    padding: 4.375rem;
+}
+.navbarmenuinnr .navbar ul li .button.close {
+    cursor: pointer;
+    background: #6365B8;
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbarmenuinnr .navbar ul li .button.close svg {
+    width: 100%;
+}
+.navbarmenuinnr .navitemwrap {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    padding-top: 7.5rem;
+}
+.navbarmenuinnr .navitemwrap ul {
+    width: 100%;
+}
+.navbarmenuinnr .navitemwrap .bottomul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.navbarmenuinnr .navitemwrap ul li a {
+    cursor: pointer;
+    color: #6365B8;
+    font-weight: 400;
+    font-size: 1.875rem;
+    text-decoration: none;
+}
+.menutriger svg {cursor: pointer;}
+.navbarmenuinnr .navitemwrap ul li {margin-bottom: 15px;}
+.navbarmenuinnr .button .btn:hover {
+    background: #fff;
+    color: #000;
+}
+.navbarmenuinnr .button .btn:hover svg path {
+    stroke: #000;
+}
+.navbarmenuinnr .navbar ul li .button.close:hover {
+    background: #fff;
+}
+.navbarmenuinnr .navbar ul li .button.close:hover svg line {
+    stroke: #000;
+}
+.navbarmenuinnr .button .btn.bookpopuptarget:hover{background: #103151;}
+.navbarmenuinnr .navitemwrap ul li a:hover {
+    color: #fff !important;
+}
+.navbarmenuinnr .button .btn.bookpopuptarget:hover svg.tlbtnbox path {
+    fill: #fff;
+    stroke: #fff;
+}
+/*Book now POPUP*/
+.bookdemopopup {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    width: 100%;
+    background-size: cover;
+    z-index: 9;
+}
+.bookdemopopup .bookdemopopupinnr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+.bookdemopopup .bookdemopopupinnr h2 {
+    color: #103151;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.bookademocontent .formdata {
+    max-width: 100%;
+    padding: 2.875rem 3.125rem;
+    background: #DCD7D3;
+    width: 100%;
+}
+.bookademocontent {
+    max-width: 64.813rem;
+    width: 100%;
+}
+.bookademocontent .formdata .formcontrol {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookademocontent .formdata .formcontrol .forminput {
+    padding: 0.5rem;
+    width: 100%;
+}
+.bookademocontent .formdata .formcontrol .forminput input, .bookademocontent .formdata .formcontrol .forminput textarea {
+    border-radius: 1044px;
+    background: #F8F8F5;
+    color: #757265;
+    font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    width: 100%;
+    padding: 0 2.625rem;
+    height: 4.125rem;
+}
+.bookademocontent .formdata .formcontrol .forminput textarea {
+    height: 7.25rem;
+    padding-top: 1rem;
+    font-size: 1.125rem;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 36px;
+}
+.contactdtsec {
+    padding-top: 12rem;
+    padding-bottom: 11rem;
+}
+.contactdtsecinnr .contactrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactdtsecinnr .contactrow .contactAD {
+    width: 20%;
+    margin-bottom: 4rem;
+}
+.contactdtsecinnr .contactrow .contactAD h6 span {display: block;margin-bottom: 4rem;}
+.contactdtsecinnr .contactrow .contactAD h6 {
+    font-size: 1.875rem;
+    font-weight: normal;
+    color: #000;
+}
+.contactdtsecinnr .contactrow .sociallinks {
+    width: 70%;
+}
+.contactdtsecinnr .contactrow .sociallinks ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 31.25rem;
+}
+.contactdtsecinnr .contactrow .sociallinks ul li {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.contactdtsecinnr .contactrow .sociallinks ul li a {
+    font-size: 1.875rem;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+.contactdtsecinnr .contactrow .mapcol {
+    width: 40%;
+}
+.contactdtsecinnr .contactrow .newslettercol {
+    width: 50%;
+}
+.contactdtsecinnr .contactrow .newslettercol .newsletterinr {
+    display: flex;
+    justify-content: end;
+}
+.contactdtsecinnr .contactrow .newslettercol .newsletterinr .tt  {width: 100%;text-align: right;}
+.contactdtsecinnr .contactrow .newslettercol .newsletterinr .tt p {
+    font-size: 1.875rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.contactdtsecinnr .contactrow .newslettercol .newsletterinr .input button.btn.btndesign2 {
+    margin-left: 0;
+    margin-right: auto;
+    float: right;
+    width: 8.438rem;
+}
+.contactdtsecinnr .contactrow .newslettercol .newsletterinr .input  {
+    text-align: right;
+}
+.contactdtsecinnr .contactrow .newslettercol .newsletterinr .input input {
+    border-radius: 1044px;
+    background: #DCD7D3;
+    font-size: 1.125rem;
+    height: 4.063rem;
+    width: 26.125rem;
+    font-family: 'DM Sans', sans-serif;
+    padding-left: 1rem;
+}
+/*About Css*/
+.whoweset .col-5 {
+    padding: 0.5rem;
+}
+.whoweset .whosetinnr {
+    height: 29rem;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5rem 4.125rem;
+    position: relative;
+    z-index: 1;
+}
+.row.whoweset {
+    padding-top: 9.25rem;
+}
+.whoweset .whosetinnr h4 {
+    font-size: 1.875rem;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.whoweset .whosetinnr p {
+    font-size: 2.8rem;
+    color: #fff;
+    opacity: 0;
+}
+.infouser {
+    padding-top: 18.25rem;
+}
+.infouser .usercontent {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+}
+.infouser .usercontent p {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+.infouser .usercontent p:last-child {
+    margin-bottom: 0;
+}
+.revolutionpatientsec {
+    background-position: 100% 100%;
+    margin-top: -10rem;
+    padding-top: 17.125rem;
+}
+.whoweset .whosetinnr:hover p {
+    opacity: 1;
+}
+.whoweset, .whoweset .whosetinnr p {
+    transition: all 0.2s ease-in-out;
+}
+.whoweset .whosetinnr .imghover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.whoweset .whosetinnr .imghover svg {
+    width: 100%;
+    height: 100%;
+}
+.whoweset .whosetinnr:hover .imghover {
+    display: block !important;
+}
+.whoweset .whosetinnr:hover {
+    background: transparent !important;
+}
+.whoweset .col-5:last-child .whosetinnr .imghover {perspective: 1000px;}
+.whoweset .col-5:last-child .whosetinnr .imghover svg {.whoweset .col-5:
+    last-child .whosetinnr .imghover;
+    transform: rotateX(180deg);
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+.whoweset .col-5:last-child .whosetinnr .imghover svg path {
+    fill: #6365b8;
+}
+.meetourexperts {
+    padding-top: 7.5rem;
+}
+.meetourexperts h2 {
+    color: #6365B8 !important;
+    margin-bottom: 3.75rem;
+}
+.clientprofile .photo {
+    text-align: center;
+    width: 13.313rem;
+    height: 13.313rem;
+    margin: 0 auto;
+}
+.clientprofile .photo img {
+    width: 100%;
+    height: 100%;
+}
+.clientprofile .info {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.clientprofile .info h6 {
+    font-size: 1.875rem;
+    color: #000;
+    font-weight: 400;
+}
+.clientprofile .info .desitination {
+    font-size: 1.125rem;
+}
+.clientprofile {
+    padding: 3rem 0;
+}
+.infouser .usercontent {
+    position: relative;
+}
+.infouser .usercontent:before {
+    content: "“";
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #103151;
+    left: -12rem;
+    position: absolute;
+    top: -3rem;
+}
+@media(max-width: 1600px ) {
+    html {
+        font-size: 68%;
+    }
+}

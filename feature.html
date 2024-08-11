@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Pair: Feature</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gochi+Hand&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="logo"><a href="index.html"><img src="images/logopair.png" alt="Logo"></a></div>
+			</div>
+			<div class="col-6">
+				<div class="navbar">
+					<ul>
+						<li>
+							<div class="button menutriger">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="27" cy="27" r="27" fill="#6365B8"/> <path d="M16 21H38" stroke="#F8F8F5" stroke-width="3" stroke-linecap="round"/> <g filter="url(#filter0_d_327_146)"> <path d="M16 34H38" stroke="#F8F8F5" stroke-width="3" stroke-linecap="round"/> </g> <defs> <filter id="filter0_d_327_146" x="10.5" y="32.5" width="33" height="11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="4"/> <feGaussianBlur stdDeviation="2"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_327_146"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_327_146" result="shape"/> </filter> </defs> </svg>
+							</div>
+						</li>
+						<li>  
+							<div class="button">
+								<a class="btn bookpopuptarget">
+									Book a Demo
+									
+									<svg class="arrows" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="201" height="54" viewBox="0 0 201 54" fill="none" style="display: none;" class="tlbtnbox">
+									<path d="M115.003 53.9486C123.841 53.9129 131.664 49.6315 136.536 43.0668C138.319 40.6636 141.206 39.3282 144.201 39.3282C147.175 39.3282 150.05 40.6432 151.828 43.026C157.143 50.1438 165.902 54.5372 175.644 53.7319C188.29 52.6845 198.641 42.6616 200.036 30.0596C201.83 13.872 189.193 0.171685 173.353 0.171685C164.201 0.171685 156.118 4.74611 151.271 11.7339C149.695 14.0071 147.16 15.4266 144.39 15.4266H143.925C141.13 15.4266 138.589 13.9689 137.008 11.6651C132.393 4.93725 124.813 0.457103 115.967 0.181873C105.797 -0.134131 48.4029 0.120712 38.2229 0.120712C28.2189 0.120712 35.4171 -0.200385 25.4284 0.204814C14.8582 0.635498 7.18813 5.69667 2.62996 14.6671C-2.2547 24.2798 -0.178406 38.6784 7.55542 46.2013C12.7666 51.2701 19.0516 53.9383 26.3008 53.9562C45.87 53.9995 95.4308 54.0301 115 53.9511L115.003 53.9486Z" fill="#0C3556"/>
+									</svg>
+								 </a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="navbarmenu" style="visibility: hidden;">
+			<div class="navbarmenuinnr">
+				<div class="navbar">
+					<ul>
+						<li>
+							<div class="button close">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<line x1="1.70711" y1="1.29289" x2="22.7071" y2="22.2929" stroke="white" stroke-width="2"/>
+									<line x1="1.29289" y1="22.2929" x2="22.2929" y2="1.29289" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</li>
+						<li>  
+							<div class="button">
+								<a class="btn bookpopuptarget">
+									Book a Demo									
+									<svg class="arrows" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="201" height="54" viewBox="0 0 201 54" fill="none" style="display: none;" class="tlbtnbox">
+									<path d="M115.003 53.9486C123.841 53.9129 131.664 49.6315 136.536 43.0668C138.319 40.6636 141.206 39.3282 144.201 39.3282C147.175 39.3282 150.05 40.6432 151.828 43.026C157.143 50.1438 165.902 54.5372 175.644 53.7319C188.29 52.6845 198.641 42.6616 200.036 30.0596C201.83 13.872 189.193 0.171685 173.353 0.171685C164.201 0.171685 156.118 4.74611 151.271 11.7339C149.695 14.0071 147.16 15.4266 144.39 15.4266H143.925C141.13 15.4266 138.589 13.9689 137.008 11.6651C132.393 4.93725 124.813 0.457103 115.967 0.181873C105.797 -0.134131 48.4029 0.120712 38.2229 0.120712C28.2189 0.120712 35.4171 -0.200385 25.4284 0.204814C14.8582 0.635498 7.18813 5.69667 2.62996 14.6671C-2.2547 24.2798 -0.178406 38.6784 7.55542 46.2013C12.7666 51.2701 19.0516 53.9383 26.3008 53.9562C45.87 53.9995 95.4308 54.0301 115 53.9511L115.003 53.9486Z" fill="#0C3556"/>
+									</svg>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="navitemwrap">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="">Features</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<div class="bottomul">
+						<ul>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Interoperability Start -->
+<div class="Interoperabilitysec">
+	<div class="container">
+		<div class="row">
+			<div class="col-45">
+				<div class="heading">
+					<div class="imgicon">
+						<img src="images/Analytics.png" alt="icon">
+					</div>
+					<h2 class="text text1">Interoperability</h2>
+					<h2 class="text text2" style="opacity: 0">Analytics</h2>
+					<h2 class="text text3" style="opacity: 0">Referral & Intakes:</h2>
+					<h2 class="text text4" style="opacity: 0">Care Coordination:</h2>
+					<h2 class="text text5" style="opacity: 0">  Security Compliance:</h2>
+				</div>	
+			</div>	
+
+			<div class="col-5">
+				<div class="content">
+					<p class="contentdb content1">Pair offers an all-encompassing solution that applies dynamic data mapping and transformative technology to track and transfer of medical information, seamlessly fitting your organization’s infrastructure. This enhances interoperability within your existing systems by automating the flow of information with digital record keeping making it accessible.</p>
+					<p class="contentdb content2" style="opacity: 0">We understand the importance of accuracy and efficiency in the healthcare industry. Hence, we designed a more structured and AI-driven healthcare analytics system for Pair to provide you with reliable, real-time data analysis, and insights that can help you organization optimize operations, reduce costs, and improve your patient care. </p>
+					<p class="contentdb content3" style="opacity: 0">We help you streamline your organization's healthcare referral and intake processes. Pair’s advanced AI technology can automate these important tasks. Our intuitive and accurate AI-enabled system can simplify the communication between healthcare providers and create a digital record of all the necessary information.</p>
+					<p class="contentdb content4" style="opacity: 0">We provide healthcare providers with the resources they need to communicate effectively with their patients focus more on the care. We offer a range of services that are tailored to meet the unique needs of your organization and patient outcomes.</p>
+					<p  class="contentdb content5" style="opacity: 0">We understand the need to protect your patient data is crucial for your business. Hence, our team ensures complete HIPAA and HL7/FHIR compliance with the latest government standards, to provide you complete data privacy and end-to-end encryption, so providers can focus on delivering care with peace of mind. </p>
+				</div>	
+			</div>			
+		</div>
+	</div>
+</div>
+<!-- Interoperability End -->
+
+<!-- Faster, easier & AI-assisted data recognition for patient record keeping. Section start -->
+<div class="aiintergated bgprop fastereasirbg" style="background-color: #E7E7E7;">
+	<div class="container">
+		<div class="row">
+			<div class="col-45">
+				<div class="heading">
+					<h2>Faster, easier & AI-assisted data recognition for patient record keeping.</h2>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-5"></div>			
+			<div class="col-5">
+				<div class="aicontent">
+					<p>
+						<span>Pair</span> <span>simplifies</span> <span>the</span> <span>documentation</span> <span>process</span> <span>by</span> <span>digitizing</span> <span>the</span> <span>handwritten</span> <span>medical</span> <span>records</span> <span>and</span> <span>prescriptions</span>, <span>standardizing</span>, <span>and</span> <span>automating</span> <span>systems</span> <span>of</span> <span>online</span> <span>record-keeping</span> <span>through</span> <span>Ai</span>. <span>Pair</span> <span>features</span> <span>an</span> <span>intuitive</span> <span>and</span> <span>user-friendly</span> <span>interface</span> <span>that</span> <span>requires</span> <span>minimal</span> <span>training</span>, <span>ensuring</span> <span>quick</span> <span>adoption</span> <span>by</span> <span>staff</span> <span>and</span> <span>minimal</span> <span>disruption</span> <span>to</span> <span>daily</span> <span>operations</span>. <span>This</span> <span>enhances</span> <span>interoperability</span>, <span>and</span> <span>accuracy</span> <span>by</span> <span>reducing</span> <span>the</span> <span>extra</span> <span>time</span> <span>and</span> <span>scope</span> <span>for</span> <span>any</span> <span>errors</span> <span>in</span> <span>manual</span> <span>record</span> <span>keeping</span> <span>procedures</span>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Faster, easier & AI-assisted data recognition for patient record keeping. Section End -->
+
+<!-- Empowering  Decision-Making  With AI-Optimized Insights. Section start -->
+<div class="aiintergated bgprop" style="background-image: url('images/aibg.png');">
+	<div class="container">
+		<div class="row">
+			<div class="col-45">
+				<div class="heading">
+					<h2 style="color: #fff">Empowering  Decision-Making  With AI-Optimized Insights.</h2>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-5">
+				<div class="image"><img src="images/Comp.png" alt="empowering"></div>
+			</div>			
+			<div class="col-5">
+				<div class="aicontent">
+					<p>
+						<span>Pair</span> <span>simplifies</span> <span>the</span> <span>documentation</span> <span>process</span> <span>by</span> <span>digitizing</span> <span>the</span> <span>handwritten</span> <span>medical</span> <span>records</span> <span>and</span> <span>prescriptions</span>, <span>standardizing</span>, <span>and</span> <span>automating</span> <span>systems</span> <span>of</span> <span>online</span> <span>record-keeping</span> <span>through</span> <span>Ai</span>. <span>Pair</span> <span>features</span> <span>an</span> <span>intuitive</span> <span>and</span> <span>user-friendly</span> <span>interface</span> <span>that</span> <span>requires</span> <span>minimal</span> <span>training</span>, <span>ensuring</span> <span>quick</span> <span>adoption</span> <span>by</span> <span>staff</span> <span>and</span> <span>minimal</span> <span>disruption</span> <span>to</span> <span>daily</span> <span>operations</span>. <span>This</span> <span>enhances</span> <span>interoperability</span>, <span>and</span> <span>accuracy</span> <span>by</span> <span>reducing</span> <span>the</span> <span>extra</span> <span>time</span> <span>and</span> <span>scope</span> <span>for</span> <span>any</span> <span>errors</span> <span>in</span> <span>manual</span> <span>record</span> <span>keeping</span> <span>procedures</span>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Empowering  Decision-Making  With AI-Optimized Insights. Section End -->
+
+ 
+<div class="footebelowsec">
+	<div class="container">
+		<div class="row">
+			<div class="marquee">
+				<p><span>Data Utility.</span> <span>Actionable Simplicity.</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="row">
+		<div class="container">
+			<div class="footerlogo">
+				<img src="images/logopair.png" alt="Logo">
+			</div>
+			<div class="footermenu">
+				<div class="leftcol">
+					<ul>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Features</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Sign up for our newsletter</a></li>
+					</ul>
+				</div>
+				<div class="rightcol">
+					<div class="btnbox">						
+						<a class="btn bookpopuptarget">
+							Book a Demo							
+							<svg class="arrows" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+							<svg xmlns="http://www.w3.org/2000/svg" width="201" height="54" viewBox="0 0 201 54" fill="none" style="display: none;" class="tlbtnbox">
+							<path d="M115.003 53.9486C123.841 53.9129 131.664 49.6315 136.536 43.0668C138.319 40.6636 141.206 39.3282 144.201 39.3282C147.175 39.3282 150.05 40.6432 151.828 43.026C157.143 50.1438 165.902 54.5372 175.644 53.7319C188.29 52.6845 198.641 42.6616 200.036 30.0596C201.83 13.872 189.193 0.171685 173.353 0.171685C164.201 0.171685 156.118 4.74611 151.271 11.7339C149.695 14.0071 147.16 15.4266 144.39 15.4266H143.925C141.13 15.4266 138.589 13.9689 137.008 11.6651C132.393 4.93725 124.813 0.457103 115.967 0.181873C105.797 -0.134131 48.4029 0.120712 38.2229 0.120712C28.2189 0.120712 35.4171 -0.200385 25.4284 0.204814C14.8582 0.635498 7.18813 5.69667 2.62996 14.6671C-2.2547 24.2798 -0.178406 38.6784 7.55542 46.2013C12.7666 51.2701 19.0516 53.9383 26.3008 53.9562C45.87 53.9995 95.4308 54.0301 115 53.9511L115.003 53.9486Z" fill="#0C3556"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footerbottom">
+				<div class="bottomurlleft">
+					<ul>
+						<li><a href="">Cookies Policy</a></li>
+						<li><a href="">Legal Terms</a></li>
+						<li><a href="">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="bottomurlright">
+					<ul>
+						<li><a href="">Linkedin</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">X (Twitter)</a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Book a Demo POPUP Start -->
+<div class="bookdemopopup" style="background-image: url(images/demobg.png); display: none;">
+	<div class="bookdemopopupinnr">		
+		<div class="button close">
+			<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="27" cy="27" r="27" fill="#6365B8"/>
+				<line x1="16.7071" y1="15.2929" x2="37.7071" y2="36.2929" stroke="white" stroke-width="2"/>
+				<line x1="16.2929" y1="36.2929" x2="37.2929" y2="15.2929" stroke="white" stroke-width="2"/>
+			</svg>
+		</div>
+		<div class="bookademocontent">
+			<div class="container">
+				<h2>Schedule a Demo today!</h2>
+				<div class="formdata">
+					<div class="formcontrol">
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="First name">
+							</div>
+						</div>
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Last name">
+							</div>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="forminput">
+							<input type="text" name="" placeholder="Email">
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="forminput">
+							<textarea placeholder="Message"></textarea>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="col-3">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Code">
+							</div>
+						</div>
+						<div class="col-7">
+							<div class="forminput">
+								<input type="text" name="" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Position">
+							</div>
+						</div>
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Company">
+							</div>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<button type="submit" class="btn btndesign2">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Book a Demo POPUP END -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
+<script type="text/javascript">	
+	$('.aifasterefficentslider, .clientreview').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false
+	});
+	document.addEventListener('DOMContentLoaded', () => {
+    // Initialize ScrollMagic Controller
+    let controller = new ScrollMagic.Controller();
+
+    // Create GSAP timeline
+    let timeline = gsap.timeline();
+
+    // Text rotation animations
+    timeline
+        .to('.text2, .content2', { opacity: 1, duration: 1 })
+        .to('.text1, .content1', { opacity: 0, duration: 1 }, "-=1")
+        .to('.text3, .content3', { opacity: 1, duration: 1 })
+        .to('.text2, .content2', { opacity: 0, duration: 1 }, "-=1")
+        .to('.text4, .content4', { opacity: 1, duration: 1 })
+        .to('.text3, .content3', { opacity: 0, duration: 1 }, "-=1")
+        .to('.text5, .content5', { opacity: 1, duration: 1 })
+        .to('.text4, .content4', { opacity: 0, duration: 1 }, "-=1");
+
+    // Attach the timeline to a ScrollMagic scene
+    new ScrollMagic.Scene({
+        triggerElement: ".Interoperabilitysec", // Trigger when .Interoperabilitysec enters the viewport
+        duration: 1900,
+        triggerHook: 0,
+        offset: 0,
+    })
+    
+    .setTween(timeline)
+    .setPin('.Interoperabilitysec')
+    .addTo(controller); // Add the scene to the controller
+});
+
+// Menu Open 
+$('.menutriger').click(function(){
+    $('.navbarmenu').css({
+        'visibility': 'visible',  // or use .show() if you prefer
+        'right': '0'
+    });
+});
+// Menu CLose
+$('.navbarmenu .button.close').click(function(){
+	$('.navbarmenu').css({
+        'visibility': 'hidden',  // or use .show() if you prefer
+        'right': '-100%'
+    });
+});
+// Book a Demo open
+$('.bookpopuptarget').click(function(){
+    $('.bookdemopopup').show();
+});
+// Book a Demo Close
+$('.bookdemopopup .close').click(function(){
+    $('.bookdemopopup').hide();
+});
+</script>
+<script>
+	gsap.registerPlugin(ScrollTrigger);
+
+	gsap.fromTo(".aicontent p span", 
+	    {
+	        opacity: 0.3, 
+	        y: 20 
+	    }, 
+	    {
+	        opacity: 1, 
+	        y: 0, 
+	        stagger: 0.1,
+	        scrollTrigger: {
+	            trigger: ".aicontent",
+	            start: "top 80%",  // Adjust as necessary
+	            end: "bottom 20%",
+	            scrub: 1
+	        }
+	    }
+	);
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	const marquee = gsap.to(".marquee p", {
+	    xPercent: -100,  // Moves the text to the left by 100% of its width
+	    duration: 10,    // Adjust for the desired speed of scrolling
+	    ease: "linear",  // Ensures constant speed without acceleration
+	    repeat: -1       // Infinite loop
+	});
+
+</script>
+</body>
+</html>
