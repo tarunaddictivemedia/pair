@@ -315,14 +315,14 @@
 
 	    // Text rotation animations
 	    timeline
-	        .to('.text2, .content2', { opacity: 1, duration: 2 }) // Increased duration
-	        .to('.text1, .content1', { opacity: 0, duration: 2 }, "-=1.5") // Increased duration with overlap
-	        .to('.text3, .content3', { opacity: 1, duration: 2 }) // Increased duration
-	        .to('.text2, .content2', { opacity: 0, duration: 2 }, "-=1.5") // Increased duration with overlap
-	        .to('.text4, .content4', { opacity: 1, duration: 2 }) // Increased duration
-	        .to('.text3, .content3', { opacity: 0, duration: 2 }, "-=1.5") // Increased duration with overlap
-	        .to('.text5, .content5', { opacity: 1, duration: 2 }) // Increased duration
-	        .to('.text4, .content4', { opacity: 0, duration: 2 }, "-=1.5"); // Increased duration with overlap
+	        .to('.text2, .content2', { opacity: 1, duration: 1 }) // Increased duration
+	        .to('.text1, .content1', { opacity: 0, duration: 2 }, "-=3") // Increased duration with overlap
+	        .to('.text3, .content3', { opacity: 1, duration: 1 }) // Increased duration
+	        .to('.text2, .content2', { opacity: 0, duration: 2 }, "-=6") // Increased duration with overlap
+	        .to('.text4, .content4', { opacity: 1, duration: 1 }) // Increased duration
+	        .to('.text3, .content3', { opacity: 0, duration: 2 }, "-=9") // Increased duration with overlap
+	        .to('.text5, .content5', { opacity: 1, duration: 1 }) // Increased duration
+	        .to('.text4, .content4', { opacity: 0, duration: 2 }, "-=12"); // Increased duration with overlap
 
 	    // Attach the timeline to a ScrollMagic scene
 	    new ScrollMagic.Scene({
