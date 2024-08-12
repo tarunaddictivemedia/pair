@@ -464,7 +464,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="marquee">
-				<p id="marqueeText">Data Utility. Actionable Simplicity.</p>
+				<p>Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity.</p>
 			</div>
 		</div>
 	</div>
@@ -711,27 +711,6 @@
 	//     ease: "linear",  // Ensures constant speed without acceleration
 	//     repeat: -1       // Infinite loop
 	// });
-
-	document.addEventListener("DOMContentLoaded", function() {
-    const marqueeText = document.getElementById("marqueeText");
-    const textWidth = marqueeText.offsetWidth;
-    const containerWidth = document.querySelector(".marquee").offsetWidth;
-
-    let currentPos = containerWidth;
-
-    function animateMarquee() {
-        if (currentPos <= -textWidth) {
-            currentPos = containerWidth; // Reset position to the start
-        } else {
-            currentPos -= 2; // Adjust this value to control the speed
-        }
-        marqueeText.style.transform = `translateX(${currentPos}px)`;
-        requestAnimationFrame(animateMarquee);
-    }
-
-    animateMarquee();
-});
-
 
 </script>
 </body>
