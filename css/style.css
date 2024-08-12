@@ -924,6 +924,20 @@ img {
     height: 100%;
 }
 .aiintergated .container {position: relative;z-index: 1}
+.footebelowsec {
+    overflow: hidden; /* Hide the overflow of the text */
+}
+
+.marquee {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#marqueeText {
+    display: inline-block;
+    position: relative;
+}
 
 @media(max-width: 1600px ) {
     html {
