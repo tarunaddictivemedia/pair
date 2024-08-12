@@ -464,7 +464,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="marquee">
-				<p>Data Utility. Actionable Simplicity.</p>
+				<p id="marqueeText">Data Utility. Actionable Simplicity.</p>
 			</div>
 		</div>
 	</div>
@@ -703,14 +703,36 @@
 	        }
 	    }
 	);
-	gsap.registerPlugin(ScrollTrigger);
+	// gsap.registerPlugin(ScrollTrigger);
 
-	const marquee = gsap.to(".marquee p", {
-	    xPercent: -100,  // Moves the text to the left by 100% of its width
-	    duration: 20,    // Adjust for the desired speed of scrolling
-	    ease: "linear",  // Ensures constant speed without acceleration
-	    repeat: -1       // Infinite loop
-	});
+	// const marquee = gsap.to(".marquee p", {
+	//     xPercent: -100,  // Moves the text to the left by 100% of its width
+	//     duration: 20,    // Adjust for the desired speed of scrolling
+	//     ease: "linear",  // Ensures constant speed without acceleration
+	//     repeat: -1       // Infinite loop
+	// });
+
+	document.addEventListener("DOMContentLoaded", function() {
+    const marqueeText = document.getElementById("marqueeText");
+    const textWidth = marqueeText.offsetWidth;
+    const containerWidth = document.querySelector(".marquee").offsetWidth;
+
+    let currentPos = containerWidth;
+
+    function animateMarquee() {
+        if (currentPos <= -textWidth) {
+            currentPos = containerWidth; // Reset position to the start
+        } else {
+            currentPos -= 2; // Adjust this value to control the speed
+        }
+        marqueeText.style.transform = `translateX(${currentPos}px)`;
+        requestAnimationFrame(animateMarquee);
+    }
+
+    animateMarquee();
+});
+
+
 </script>
 </body>
 </html>
