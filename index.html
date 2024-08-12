@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 	<title>Pair: home</title>
@@ -210,9 +210,7 @@
 
 <!-- aifaster Efficient Start -->
 <div class="aifasterefficentsec">
-	<div class="imganimation">
-		<img src="images/animation.png">
-	</div>
+	<div class="imganimation" id="circleanimation"></div>
 	<div class="aifasterefficentslider">
 		<div class="aifasterefficentslide">
 			<div class="aifasterefficentslideinnr">
@@ -587,12 +585,22 @@
 </div>
 <!-- Book a Demo POPUP END -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
+<script type="text/javascript">
+	var animation = lottie.loadAnimation({
+        container: document.getElementById('circleanimation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/life.json' // Update this path
+    });
+</script>
 <script type="text/javascript">	
 	$('.aifasterefficentslider, .clientreview').slick({
 	  slidesToShow: 3,
