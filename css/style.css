@@ -92,6 +92,7 @@ ul  {
 }
 header {
     padding-top: 4rem;
+    position: relative;z-index: 2;
 }
 header .logo img {
     max-width: 13.313rem;
@@ -143,6 +144,7 @@ svg.tlbtnbox {
 .mainbanner {
     height: 100vh;
     margin-top: -9.725rem;
+    position: relative;z-index: 1;
 }
 .bookdemopopupinnr .button.close svg {
     width: 100%;
@@ -912,6 +914,14 @@ img {
 #mainsvg {
     position: absolute;top: 0;left: 0;width: 100%;height: 100%;
 }
+#mainsvg svg {
+    object-fit: cover !important;
+    width: 100% !important;
+    z-index: -1;
+    position: relative;
+    height: 100%;
+}
+
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
