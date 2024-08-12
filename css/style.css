@@ -923,7 +923,7 @@ img {
     position: relative;
     height: 100%;
 }
-.comprehensivepatient .container {position: relative;z-index: 1}
+.aiintergated .container {position: relative;z-index: 1}
 
 @media(max-width: 1600px ) {
     html {
