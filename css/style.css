@@ -159,6 +159,7 @@ svg.tlbtnbox {
 }
 .mainbanner .container {
     height: 100%;
+    position: relative;z-index: 1;
 }
 .bgprop {background-position: center;background-size: cover;}
 
