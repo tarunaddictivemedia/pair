@@ -143,6 +143,7 @@ svg.tlbtnbox {
 }
 .mainbanner {
     height: 100vh;
+    overflow: hidden;
     margin-top: -9.725rem;
     position: relative;z-index: 1;
 }
@@ -913,7 +914,7 @@ img {
 }
 .Interoperabilitysec h2.text {background-color: #fff;}
 #mainsvg {
-    position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.6;
+    position: absolute;top: 0;left: 0;width: 100%;opacity: 0.6;
 }
 #mainsvg svg {
     object-fit: cover !important;
