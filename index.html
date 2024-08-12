@@ -98,7 +98,7 @@
 </div>
 <!-- main Banner end-->
 <!-- Enter the world of AI-integrated smart healthcare system. Section start -->
-<div class="aiintergated bgprop" style="background-image: url('images/aibg.png');">
+<div class="aiintergated bgprop">
 	<div class="container">
 		<div class="row">
 			<div class="col-4">
@@ -195,6 +195,7 @@
 			</ul>
 		</div>
 	</div>
+	<div id="maincaresvg"></div>
 </div>
 <!-- Comprehensive Patient Management In One Platform End -->
 
@@ -607,6 +608,13 @@
         loop: true,
         autoplay: true,
         path: 'images/header.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('maincaresvg'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/care.json' // Update this path
     });
 </script>
 <script type="text/javascript">	
