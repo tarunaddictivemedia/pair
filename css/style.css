@@ -904,6 +904,10 @@ img {
     position: absolute;
     top: -3rem;
 }
+#circleanimation {
+   width: 79.313rem;
+   height: 59.688rem; 
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
