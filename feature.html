@@ -87,29 +87,97 @@
 <!-- Interoperability Start -->
 <div class="Interoperabilitysec">
 	<div class="container">
-		<div class="row">
-			<div class="col-45">
-				<div class="heading">
-					<div class="imgicon">
-						<img src="images/Analytics.png" alt="icon">
-					</div>
-					<h2 class="text text1">Interoperability</h2>
-					<h2 class="text text2" style="opacity: 0">Analytics</h2>
-					<h2 class="text text3" style="opacity: 0">Referral & Intakes</h2>
-					<h2 class="text text4" style="opacity: 0">Care Coordination</h2>
-					<h2 class="text text5" style="opacity: 0">  Security Compliance</h2>
-				</div>	
-			</div>	
+		<div class="slick-slider">
+			<div class="rowslide">
+				<div class="row">
+					<div class="col-45">
+						<div class="heading">
+							<div class="imgicon">
+								<img src="images/Analytics.png" alt="icon">
+							</div>
+							<h2 class="text text1">Interoperability</h2>
+						</div>	
+					</div>	
 
-			<div class="col-5">
-				<div class="content">
-					<p class="contentdb content1">Pair offers an all-encompassing solution that applies dynamic data mapping and transformative technology to track and transfer of medical information, seamlessly fitting your organization’s infrastructure. This enhances interoperability within your existing systems by automating the flow of information with digital record keeping making it accessible.</p>
-					<p class="contentdb content2" style="opacity: 0">We understand the importance of accuracy and efficiency in the healthcare industry. Hence, we designed a more structured and AI-driven healthcare analytics system for Pair to provide you with reliable, real-time data analysis, and insights that can help you organization optimize operations, reduce costs, and improve your patient care. </p>
-					<p class="contentdb content3" style="opacity: 0">We help you streamline your organization's healthcare referral and intake processes. Pair’s advanced AI technology can automate these important tasks. Our intuitive and accurate AI-enabled system can simplify the communication between healthcare providers and create a digital record of all the necessary information.</p>
-					<p class="contentdb content4" style="opacity: 0">We provide healthcare providers with the resources they need to communicate effectively with their patients focus more on the care. We offer a range of services that are tailored to meet the unique needs of your organization and patient outcomes.</p>
-					<p  class="contentdb content5" style="opacity: 0">We understand the need to protect your patient data is crucial for your business. Hence, our team ensures complete HIPAA and HL7/FHIR compliance with the latest government standards, to provide you complete data privacy and end-to-end encryption, so providers can focus on delivering care with peace of mind. </p>
-				</div>	
+					<div class="col-5">
+						<div class="content">
+							<p class="contentdb content1">Pair offers an all-encompassing solution that applies dynamic data mapping and transformative technology to track and transfer of medical information, seamlessly fitting your organization’s infrastructure. This enhances interoperability within your existing systems by automating the flow of information with digital record keeping making it accessible.</p>
+						</div>	
+					</div>			
+				</div>
+			</div>
+			<div class="rowslide">
+				<div class="row">
+					<div class="col-45">
+						<div class="heading">
+							<div class="imgicon">
+								<img src="images/Analytics.png" alt="icon">
+							</div>
+							<h2 class="text text2">Analytics</h2>
+						</div>	
+					</div>	
+
+					<div class="col-5">
+						<div class="content">
+							<p class="contentdb content2">We understand the importance of accuracy and efficiency in the healthcare industry. Hence, we designed a more structured and AI-driven healthcare analytics system for Pair to provide you with reliable, real-time data analysis, and insights that can help you organization optimize operations, reduce costs, and improve your patient care. </p>
+						</div>	
+					</div>			
+				</div>
+			</div>
+			<div class="rowslide">
+				<div class="row">
+					<div class="col-45">
+						<div class="heading">
+							<div class="imgicon">
+								<img src="images/Analytics.png" alt="icon">
+							</div>
+							<h2 class="text text3">Referral & Intakes</h2>
+						</div>	
+					</div>	
+
+					<div class="col-5">
+						<div class="content">
+							<p class="contentdb content3">We help you streamline your organization's healthcare referral and intake processes. Pair’s advanced AI technology can automate these important tasks. Our intuitive and accurate AI-enabled system can simplify the communication between healthcare providers and create a digital record of all the necessary information.</p>
+						</div>	
+					</div>			
+				</div>
 			</div>			
+			<div class="rowslide">
+				<div class="row">
+					<div class="col-45">
+						<div class="heading">
+							<div class="imgicon">
+								<img src="images/Analytics.png" alt="icon">
+							</div>
+							<h2 class="text text4">Care Coordination</h2>
+						</div>	
+					</div>	
+
+					<div class="col-5">
+						<div class="content">
+							<p class="contentdb content4">We provide healthcare providers with the resources they need to communicate effectively with their patients focus more on the care. We offer a range of services that are tailored to meet the unique needs of your organization and patient outcomes.</p>
+						</div>	
+					</div>			
+				</div>
+			</div>
+			<div class="rowslide">
+				<div class="row">
+					<div class="col-45">
+						<div class="heading">
+							<div class="imgicon">
+								<img src="images/Analytics.png" alt="icon">
+							</div>
+							<h2 class="text text5">  Security Compliance</h2>
+						</div>	
+					</div>	
+
+					<div class="col-5">
+						<div class="content">
+							<p  class="contentdb content5">We understand the need to protect your patient data is crucial for your business. Hence, our team ensures complete HIPAA and HL7/FHIR compliance with the latest government standards, to provide you complete data privacy and end-to-end encryption, so providers can focus on delivering care with peace of mind. </p>
+						</div>	
+					</div>			
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -386,11 +454,38 @@ $('.bookdemopopup .close').click(function(){
 
 	const marquee = gsap.to(".marquee p", {
 	    xPercent: -100,  // Moves the text to the left by 100% of its width
-	    duration: 20,    // Adjust for the desired speed of scrolling
+	    duration: 100,    // Adjust for the desired speed of scrolling
 	    ease: "linear",  // Ensures constant speed without acceleration
 	    repeat: -1       // Infinite loop
 	});
+	// Slick Slider
+	jQuery(".slick-slider").slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  fade:true,
+	  speed: 1000,
+	    infinite: true,
+	    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+	  arrows : false
+	});
 
+	// Slick Scroll
+	jQuery(function () {
+	  const slider = jQuery(".slick-slider");
+	  slider;
+
+	  slider.on("wheel", function (e) {
+	    e.preventDefault();
+
+	    if (e.originalEvent.deltaY < 0) {
+	      jQuery(this).slick("slickNext");
+	    } else {
+	      jQuery(this).slick("slickPrev");
+	    }
+	  });
+	});
+
+	// https://codepen.io/vone8/
 </script>
 </body>
 </html>
