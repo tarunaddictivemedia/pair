@@ -98,7 +98,7 @@ header .logo img {
     max-width: 13.313rem;
 }
 .button .btn {
-    background: #6365b8;
+    background: rgb(12, 53, 86);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +113,7 @@ header .logo img {
     font-size: 1.125rem;
 }
 .button .btn:hover svg.tlbtnbox {
-    display: block !important;
+    opacity: 1;
 }
 svg.tlbtnbox {
     width: 100% !important;
@@ -122,6 +122,7 @@ svg.tlbtnbox {
     right: 0;
     height: 100% !important;
     z-index: -1;
+    opacity: 1;
 }
 .button .btn:hover {
     background: transparent;
@@ -274,29 +275,33 @@ h1, h2 {
     align-items: center;
     padding: 2rem 3.563rem;
     border-radius: 10px;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
-.aifasterefficentslideinnr p {display: none;z-index: 1;position: relative;font-size: 1.125rem; margin-bottom: 1.5rem;}
+.aifasterefficentslideinnr p {visibility: hidden;z-index: 1;position: relative;font-size: 1.125rem; margin-bottom: 1.5rem;}
 .aifasterefficentslideinnr h4 {
     color: #6365B8;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: normal;
     max-width: 23.688rem;
     z-index: 1;
     position: relative;
-    margin-bottom: 1.25rem;
+    margin-bottom: -3.75rem;
+    transition: all 0.3s ease-in-out;
 }
 .aifasterefficentslide .aifasterefficentslideinnr:hover p {
-    display: block;
+    visibility: visible;
 }
-.aifasterefficentslideinnr:hover .imghover {
+.aifasterefficentslideinnr .imghover {
     display: block !important;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    bottom: -100%;
     left: 0;
+    transition: all 0.5s ease-in-out;
 }
+.aifasterefficentslideinnr:hover .imghover{bottom: 0;}
 .aifasterefficentslideinnr .imghover img {
     width: 100%;
     height: 100%;
@@ -304,7 +309,8 @@ h1, h2 {
 .aifasterefficentslideinnr .imghover {
     z-index: 0;
 }
-.aifasterefficentslideinnr:hover h4 {color: #A0CAF0;}
+.aifasterefficentslideinnr:hover h4 {color: #A0CAF0;
+    margin-bottom: 1.25rem;}
 .aifasterefficentslideinnr:hover p {
     color: #fff;
 }
@@ -506,7 +512,7 @@ footer .footermenu .leftcol ul li a {
     height: 2.375rem;
 }
 .footermenu .rightcol .btnbox .btn {
-    background: #6365b8;
+    background: rgb(12, 53, 86);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -520,6 +526,9 @@ footer .footermenu .leftcol ul li a {
     cursor: pointer;
     font-size: 1.125rem;
 }
+.easysteps {
+    margin-bottom: 4rem;
+}
 .footermenu .rightcol .btnbox .btn .arrows{right: -11px;    position: relative;}
 .footermenu .rightcol .btnbox .btn:hover svg.tlbtnbox {display: block !important;}
 .footermenu .rightcol .btnbox .btn:hover {background: transparent;}
@@ -531,7 +540,7 @@ footer .footermenu .leftcol ul li a {
     font-size: 1.875rem;
 }
 .Interoperabilitysec {
-    height: 80vh;
+    height: 80vh;overflow: hidden;
 }
 .Interoperabilitysec .container {height: 100%;}
 .Interoperabilitysec .row {height: 100%;align-items: center;}
@@ -549,15 +558,15 @@ img {
 .Interoperabilitysec .heading {
     position: relative;
     width: 100%;
-    transform: translate(0px, 30%);
+    /*transform: translate(0px, 30%);*/
 }
 .Interoperabilitysec .heading .imgicon {
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
 }
-.Interoperabilitysec .contentdb {
+/*.Interoperabilitysec .contentdb {
     position: absolute;
     top: 40%;
-}
+}*/
 .aicontent p span, .aifasterefficentsec .heading h2 span {
     opacity: 0;
     transform: translateY(20px);
@@ -566,7 +575,7 @@ img {
     position: relative;
     width: 100%;
     display: inline-block;
-    transform: translate(0px, -6.375rem);
+    /*transform: translate(0px, -6.375rem);*/
 }
 .faqcontent {
     display: none;
@@ -924,7 +933,116 @@ img {
     height: 100%;
 }
 .aiintergated .container {position: relative;z-index: 1}
-
+.slick-slider .rowslide {height: 100vh; background-color: #fff;}
+.Interoperabilitysec .row {
+    padding-bottom: 12rem;
+}
+.aifasterefficentslider.panels-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 0;
+    overflow: hidden;
+    width: 180%;
+    padding-left: 30rem !important;
+}
+.aifasterefficentslider.digitals-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 0;
+    overflow: hidden;
+    width: 180%;
+    padding-left: 10rem !important;
+}
+.panel.aifasterefficentslide, .digital.aifasterefficentslide {
+    width: calc(100% / 4);
+    /*height: 100%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+.panels .panels-container .panel, .digitals .digitals-container .digital {
+    position: relative;
+    width: 18%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    text-align: left;
+}
+.digitals .digitals-container .digital {
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    text-align: left;
+}
+.newsletteropenbox {
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    left: 0;
+    height: 10.5rem;
+    top: auto;
+}
+.newsletteropenbox .newslettercol .newsletterinr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.newsletteropenbox .container {
+    height: 100%;
+}
+.newsletteropenbox .container .newslettercol {
+    height: 100%;
+}
+.newsletteropenbox .newslettercol .newsletterinr .tt p {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+.newsletteropenbox .newslettercol .newsletterinr  .input {
+    display: flex;
+    align-items: center;
+}
+.newsletteropenbox .newslettercol .newsletterinr .input input {
+    border-radius: 111px;
+    border: 1px solid #FFF;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.575rem;
+    height: 3.375rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+}
+.newsletteropenbox .newslettercol .newsletterinr .input button {
+    background: #fff;
+    margin-top: 0;
+    margin-left: 2rem;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+}
+.newsletteropenbox .newslettercol .newsletterinr .input input::Placeholder {
+    color: #fff;
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
