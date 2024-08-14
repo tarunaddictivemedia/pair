@@ -1075,6 +1075,10 @@ img {
     fill: #6365b8 !important;
     stroke: #6365b8 !important;
 }
+.Interoperabilitysec .heading .imgicon svg {
+    width: 20rem !important;
+    height: 20rem !important;
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
