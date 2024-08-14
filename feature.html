@@ -220,7 +220,7 @@
 		</div>
 		<div class="row">
 			<div class="col-5">
-				<div class="image"><img src="images/Comp.png" alt="empowering"></div>
+				<div class="image"><div id="mananima"></div></div>
 			</div>			
 			<div class="col-5">
 				<div class="aicontent">
@@ -534,6 +534,13 @@ var animation = lottie.loadAnimation({
         loop: true,
         autoplay: true,
         path: 'images/icon5.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('mananima'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/man.json' // Update this path
     });
 </script>
 </body>
