@@ -147,7 +147,7 @@
 				<li>
 					<div class="linnr">
 						<div class="icon">
-							<img src="images/INteroperability.png" alt="">
+							<div id="icon1"></div>
 						</div>
 						<div class="content">
 							<p>INteroperability</p>
@@ -157,7 +157,7 @@
 				<li>
 					<div class="linnr">
 						<div class="icon">
-							<img src="images/Analytics.png" alt="">
+							<div id="icon2"></div>
 						</div>
 						<div class="content">
 							<p>Analytics</p>
@@ -167,7 +167,8 @@
 				<li>
 					<div class="linnr">
 						<div class="icon">
-							<img src="images/CAre.png" alt="">
+							<div id="icon23
+							"></div>
 						</div>
 						<div class="content">
 							<p>CAre coordination</p>
@@ -176,8 +177,8 @@
 				</li>
 				<li>
 					<div class="linnr">
-						<div class="icon">
-							<img src="images/security.png" alt="">
+						<div class="icon">							
+							<div class="icon4"></div>
 						</div>
 						<div class="content">
 							<p>security & compliance</p>
@@ -186,8 +187,8 @@
 				</li>
 				<li>
 					<div class="linnr">
-						<div class="icon">
-							<img src="images/Referrals.png" alt="">
+						<div class="icon">							
+							<div id="icon4"></div>
 						</div>
 						<div class="content">
 							<p>Referrals & INtakes</p>
@@ -315,32 +316,30 @@
 		 <div id="digitals-slider">
 		 	<div class="digitals scroll">
 				<div class="aifasterefficentslider digitals-container">
-					<div class="aifasterefficentslider digitals-container">
-						<div id="digital-1" class="digital aifasterefficentslide">
-							<div class="aifasterefficentslideinnr">
-								<div class="slidecontent">
-									<h4>Digital healthcare access</h4>
-									<p>Completely digital, hassle-free & paperless</p>
-									<div class="imghover" style="display: none;"><img src="images/imghover.png"></div>
-								</div>
+					<div id="digital-1" class="digital aifasterefficentslide">
+						<div class="aifasterefficentslideinnr">
+							<div class="slidecontent">
+								<h4>Digital healthcare access</h4>
+								<p>Completely digital, hassle-free & paperless</p>
+								<div class="imghover" style="display: none;"><img src="images/imghover.png"></div>
 							</div>
 						</div>
-						<div id="digital-2" class="digital aifasterefficentslide">
-							<div class="aifasterefficentslideinnr">
-								<div class="slidecontent">
-									<h4>Improved patient care</h4>
-									<p>Easily access your medical history for any medical & doctor’s visit.</p>
-									<div class="imghover" style="display: none;"><img src="images/imghover.png"></div>
-								</div>
+					</div>
+					<div id="digital-2" class="digital aifasterefficentslide">
+						<div class="aifasterefficentslideinnr">
+							<div class="slidecontent">
+								<h4>Improved patient care</h4>
+								<p>Easily access your medical history for any medical & doctor’s visit.</p>
+								<div class="imghover" style="display: none;"><img src="images/imghover.png"></div>
 							</div>
 						</div>
-						<div id="digital-3" class="digital aifasterefficentslide">
-							<div class="aifasterefficentslideinnr">
-								<div class="slidecontent">
-									<h4>Simple & easy to maintain</h4>
-									<p>Solves the need to carry physical records and their maintenance.</p>
-									<div class="imghover" style="display: none;"><img src="images/imghover.png"></div>
-								</div>
+					</div>
+					<div id="digital-3" class="digital aifasterefficentslide">
+						<div class="aifasterefficentslideinnr">
+							<div class="slidecontent">
+								<h4>Simple & easy to maintain</h4>
+								<p>Solves the need to carry physical records and their maintenance.</p>
+								<div class="imghover" style="display: none;"><img src="images/imghover.png"></div>
 							</div>
 						</div>
 					</div>
@@ -667,6 +666,34 @@
         autoplay: true,
         path: 'images/header.json' // Update this path
     });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('icon1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/icon1.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('icon2'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'icon1' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('icon3'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/icon3.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('icon4'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/header.json' // Update this path
+    });
 </script>
 <script type="text/javascript">	
 	$('.clientreview').slick({
@@ -695,6 +722,9 @@
 	});
 	$('.newsign').click(function(){
 	    $('.newsletteropenbox').show();
+	});
+	$('.newsletteropenbox .close').click(function(){
+	    $('.newsletteropenbox').hide();
 	});
 	// Book a Demo Close
 	$('.bookdemopopup .close').click(function(){
