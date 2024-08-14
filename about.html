@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Pair: Feature</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gochi+Hand&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="logo"><a href="index.html"><img src="images/logopair.png" alt="Logo"></a></div>
+			</div>
+			<div class="col-6">
+				<div class="navbar">
+					<ul>
+						<li>
+							<div class="button menutriger">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="27" cy="27" r="27" fill="#6365B8"/> <path d="M16 21H38" stroke="#F8F8F5" stroke-width="3" stroke-linecap="round"/> <g filter="url(#filter0_d_327_146)"> <path d="M16 34H38" stroke="#F8F8F5" stroke-width="3" stroke-linecap="round"/> </g> <defs> <filter id="filter0_d_327_146" x="10.5" y="32.5" width="33" height="11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="4"/> <feGaussianBlur stdDeviation="2"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_327_146"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_327_146" result="shape"/> </filter> </defs> </svg>
+							</div>
+						</li>
+						<li>  
+							<div class="button">
+								<a class="btn bookpopuptarget">
+									Book a Demo
+									
+									<svg class="arrows" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="201" height="54" viewBox="0 0 201 54" fill="none"class="tlbtnbox">
+									<path d="M115.003 53.9486C123.841 53.9129 131.664 49.6315 136.536 43.0668C138.319 40.6636 141.206 39.3282 144.201 39.3282C147.175 39.3282 150.05 40.6432 151.828 43.026C157.143 50.1438 165.902 54.5372 175.644 53.7319C188.29 52.6845 198.641 42.6616 200.036 30.0596C201.83 13.872 189.193 0.171685 173.353 0.171685C164.201 0.171685 156.118 4.74611 151.271 11.7339C149.695 14.0071 147.16 15.4266 144.39 15.4266H143.925C141.13 15.4266 138.589 13.9689 137.008 11.6651C132.393 4.93725 124.813 0.457103 115.967 0.181873C105.797 -0.134131 48.4029 0.120712 38.2229 0.120712C28.2189 0.120712 35.4171 -0.200385 25.4284 0.204814C14.8582 0.635498 7.18813 5.69667 2.62996 14.6671C-2.2547 24.2798 -0.178406 38.6784 7.55542 46.2013C12.7666 51.2701 19.0516 53.9383 26.3008 53.9562C45.87 53.9995 95.4308 54.0301 115 53.9511L115.003 53.9486Z" fill="#0C3556"/>
+									</svg>
+								 </a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="navbarmenu" style="visibility: hidden;">
+			<div class="navbarmenuinnr">
+				<div class="navbar">
+					<ul>
+						<li>
+							<div class="button close">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<line x1="1.70711" y1="1.29289" x2="22.7071" y2="22.2929" stroke="white" stroke-width="2"/>
+									<line x1="1.29289" y1="22.2929" x2="22.2929" y2="1.29289" stroke="white" stroke-width="2"/>
+								</svg>
+							</div>
+						</li>
+						<li>  
+							<div class="button">
+								<a class="btn bookpopuptarget">
+									Book a Demo									
+									<svg class="arrows" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="201" height="54" viewBox="0 0 201 54" fill="none"class="tlbtnbox">
+									<path d="M115.003 53.9486C123.841 53.9129 131.664 49.6315 136.536 43.0668C138.319 40.6636 141.206 39.3282 144.201 39.3282C147.175 39.3282 150.05 40.6432 151.828 43.026C157.143 50.1438 165.902 54.5372 175.644 53.7319C188.29 52.6845 198.641 42.6616 200.036 30.0596C201.83 13.872 189.193 0.171685 173.353 0.171685C164.201 0.171685 156.118 4.74611 151.271 11.7339C149.695 14.0071 147.16 15.4266 144.39 15.4266H143.925C141.13 15.4266 138.589 13.9689 137.008 11.6651C132.393 4.93725 124.813 0.457103 115.967 0.181873C105.797 -0.134131 48.4029 0.120712 38.2229 0.120712C28.2189 0.120712 35.4171 -0.200385 25.4284 0.204814C14.8582 0.635498 7.18813 5.69667 2.62996 14.6671C-2.2547 24.2798 -0.178406 38.6784 7.55542 46.2013C12.7666 51.2701 19.0516 53.9383 26.3008 53.9562C45.87 53.9995 95.4308 54.0301 115 53.9511L115.003 53.9486Z" fill="#0C3556"/>
+									</svg>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="navitemwrap">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="feature.html">Features</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<div class="bottomul">
+						<ul>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Revolutionizing patient care with a digitized healthcare experience Section start -->
+<div class="aiintergated bgprop fastereasirbg revolutionpatientsec" style="background-image: url('images/aboutbg.png'); background-color: transparent;">
+	<div class="container">
+		<div class="row">
+			<div class="col-45">
+				<div class="heading">
+					<h2>Revolutionizing patient care with a digitized healthcare experience</h2>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-5"></div>			
+			<div class="col-5">
+				<div class="aicontent">
+					<p>
+						<span>At</span> <span>pair</span> <span>we</span> <span>are</span> <span>passionately</span> <span>dedicated</span> <span>towards</span> <span>leveraging</span> <span>the</span> <span>capabilities</span> <span>of</span> <span>Artificial</span> <span>Intelligence,</span> <span>paired</span> <span>with</span> <span>the</span> <span>human</span> <span>expertise,</span> <span>to</span> <span>drive</span> <span>significant</span> <span>advancements</span> <span>and</span> <span>standardize</span> <span>information</span> <span>flow</span> <span>within</span> <span>the</span> <span>Indian</span> <span>healthcare</span> <span>industry.</span>
+
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row whoweset">	
+			<div class="col-5">	
+				<div class="whosetinnr" style="background-color: #6365B8;">	
+					<div class="setinnr">	
+						<h4>Who we are?</h4>
+						<p>We help navigate the communication link between the healthcare providers and their patients through AI integration.</p>
+						<div class="imghover" style="display: none;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="862" height="498" viewBox="0 0 862 498" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.944824C8.9543 0.944824 0 9.89915 0 20.9448V477C0 488.046 8.9543 497 20 497H327.218C329.027 497.082 330.041 497.121 331.056 497.133C333.884 497.168 336.714 497 356.743 497C364.716 497 372.687 497.016 380.656 497.031C396.592 497.062 412.52 497.093 428.446 497H431L430.989 496.984C446.949 496.877 462.907 496.637 478.87 496.141C514.279 495.038 544.624 477.086 563.094 450.128C569.424 440.897 579.594 435.057 590.784 435.057H592.642C603.731 435.057 613.879 440.744 620.189 449.853C639.589 477.852 671.945 497 708.579 497C708.683 497 708.787 497 708.891 497L708.892 497H842C853.046 497 862 488.046 862 477V20.9448C862 9.89913 853.046 0.944824 842 0.944824H708.126H352.915H20Z" fill="#103151"/>
+							</svg>
+						</div>	
+					</div>	
+				</div>	
+			</div>	
+			<div class="col-5">	
+				<div class="whosetinnr" style="background-color: #103151;">	
+					<div class="setinnr">	
+						<h4>What sets us apart?</h4>
+						<p>With us everything becomes easy so you can communicate with your patients better.</p>
+						<div class="imghover" style="display: none;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="862" height="498" viewBox="0 0 862 498" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.944824C8.9543 0.944824 0 9.89915 0 20.9448V477C0 488.046 8.9543 497 20 497H327.218C329.027 497.082 330.041 497.121 331.056 497.133C333.884 497.168 336.714 497 356.743 497C364.716 497 372.687 497.016 380.656 497.031C396.592 497.062 412.52 497.093 428.446 497H431L430.989 496.984C446.949 496.877 462.907 496.637 478.87 496.141C514.279 495.038 544.624 477.086 563.094 450.128C569.424 440.897 579.594 435.057 590.784 435.057H592.642C603.731 435.057 613.879 440.744 620.189 449.853C639.589 477.852 671.945 497 708.579 497C708.683 497 708.787 497 708.891 497L708.892 497H842C853.046 497 862 488.046 862 477V20.9448C862 9.89913 853.046 0.944824 842 0.944824H708.126H352.915H20Z" fill="#103151"/>
+							</svg>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		</div>	
+		<div class="infouser">	
+			<div class="usercontent">	
+				<p>Pair automates the labor-intensive process of data entry from handwritten notes, prescriptions, and reports. This saves administrative staff a significant amount of time, allowing them to focus more on patient care and other critical tasks, ultimately improving operational efficiency and reducing administrative overhead.</p>
+				<p>-Raj Attur</p>
+			</div>	
+		</div>	
+	</div>
+</div>
+<!-- Revolutionizing patient care with a digitized healthcare experience Section End -->
+
+<!-- Empowering  Decision-Making  With AI-Optimized Insights. Section start -->
+<div class="meetourexperts">
+	<div class="container">
+		<div class="row">
+			<div class="col-45">
+				<div class="heading">
+					<h2 style="color: #fff">Meet our experts</h2>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-third">
+				<div class="clientprofile">	
+					<div class="photo">
+						<img src="images/client1.png">
+					</div>
+					<div class="info">
+						<h6>Amit Desai</h6>
+						<div class="desitination">cascn zcn.ac</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-third">
+				<div class="clientprofile">	
+					<div class="photo">
+						<img src="images/client1.png">
+					</div>
+					<div class="info">
+						<h6>Amit Desai</h6>
+						<div class="desitination">cascn zcn.ac</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-third">
+				<div class="clientprofile">	
+					<div class="photo">
+						<img src="images/client1.png">
+					</div>
+					<div class="info">
+						<h6>Amit Desai</h6>
+						<div class="desitination">cascn zcn.ac</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-third">
+				<div class="clientprofile">	
+					<div class="photo">
+						<img src="images/client1.png">
+					</div>
+					<div class="info">
+						<h6>Amit Desai</h6>
+						<div class="desitination">cascn zcn.ac</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-third">
+				<div class="clientprofile">	
+					<div class="photo">
+						<img src="images/client1.png">
+					</div>
+					<div class="info">
+						<h6>Amit Desai</h6>
+						<div class="desitination">cascn zcn.ac</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-third">
+				<div class="clientprofile">	
+					<div class="photo">
+						<img src="images/client1.png">
+					</div>
+					<div class="info">
+						<h6>Amit Desai</h6>
+						<div class="desitination">cascn zcn.ac</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Empowering  Decision-Making  With AI-Optimized Insights. Section End -->
+
+ 
+<div class="footebelowsec">
+	<div class="container">
+		<div class="row">
+			<div class="marquee">
+				<p>Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity. Data Utility. Actionable Simplicity.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="row">
+		<div class="container">
+			<div class="footerlogo">
+				<img src="images/logopair.png" alt="Logo">
+			</div>
+			<div class="footermenu">
+				<div class="leftcol">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="feature.html">Features</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="newsign"><a href="javascript:;">Sign up for our newsletter</a></li>
+					</ul>
+				</div>
+				<div class="rightcol">
+					<div class="btnbox">						
+						<a class="btn bookpopuptarget">
+							Book a Demo							
+							<svg class="arrows" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+							<svg xmlns="http://www.w3.org/2000/svg" width="201" height="54" viewBox="0 0 201 54" fill="none"class="tlbtnbox">
+							<path d="M115.003 53.9486C123.841 53.9129 131.664 49.6315 136.536 43.0668C138.319 40.6636 141.206 39.3282 144.201 39.3282C147.175 39.3282 150.05 40.6432 151.828 43.026C157.143 50.1438 165.902 54.5372 175.644 53.7319C188.29 52.6845 198.641 42.6616 200.036 30.0596C201.83 13.872 189.193 0.171685 173.353 0.171685C164.201 0.171685 156.118 4.74611 151.271 11.7339C149.695 14.0071 147.16 15.4266 144.39 15.4266H143.925C141.13 15.4266 138.589 13.9689 137.008 11.6651C132.393 4.93725 124.813 0.457103 115.967 0.181873C105.797 -0.134131 48.4029 0.120712 38.2229 0.120712C28.2189 0.120712 35.4171 -0.200385 25.4284 0.204814C14.8582 0.635498 7.18813 5.69667 2.62996 14.6671C-2.2547 24.2798 -0.178406 38.6784 7.55542 46.2013C12.7666 51.2701 19.0516 53.9383 26.3008 53.9562C45.87 53.9995 95.4308 54.0301 115 53.9511L115.003 53.9486Z" fill="#0C3556"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footerbottom">
+				<div class="bottomurlleft">
+					<ul>
+						<li><a href="">Cookies Policy</a></li>
+						<li><a href="">Legal Terms</a></li>
+						<li><a href="">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="bottomurlright">
+					<ul>
+						<li><a href="">Linkedin</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">X (Twitter)</a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="newsletteropenbox" style="display: none;background-color: #6365B8;">
+	<div class="container">		
+		<div class="newslettercol">
+			<div class="newsletterinr">
+				<div class="tt">
+					<p>Sign up for newsletter</p>
+				</div>
+				<div class="input">
+					<span class="close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 23" fill="none">
+							<line x1="1.70711" y1="1.29289" x2="22.7071" y2="22.2929" stroke="white" stroke-width="2"/>
+							<line x1="1.29289" y1="22.2929" x2="22.2929" y2="1.29289" stroke="white" stroke-width="2"/>
+						</svg>
+					</span>
+					<input type="text" name="" placeholder="Email Address"><button type="submit" class="btn btndesign2">Send</button></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- Book a Demo POPUP Start -->
+<div class="bookdemopopup" style="background-image: url(images/demobg.png); display: none;">
+	<div class="bookdemopopupinnr">		
+		<div class="button close">
+			<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="27" cy="27" r="27" fill="#6365B8"/>
+				<line x1="16.7071" y1="15.2929" x2="37.7071" y2="36.2929" stroke="white" stroke-width="2"/>
+				<line x1="16.2929" y1="36.2929" x2="37.2929" y2="15.2929" stroke="white" stroke-width="2"/>
+			</svg>
+		</div>
+		<div class="bookademocontent">
+			<div class="container">
+				<h2>Schedule a Demo today!</h2>
+				<div class="formdata">
+					<div class="formcontrol">
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="First name">
+							</div>
+						</div>
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Last name">
+							</div>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="forminput">
+							<input type="text" name="" placeholder="Email">
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="forminput">
+							<textarea placeholder="Message"></textarea>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="col-3">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Code">
+							</div>
+						</div>
+						<div class="col-7">
+							<div class="forminput">
+								<input type="text" name="" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Position">
+							</div>
+						</div>
+						<div class="col-5">
+							<div class="forminput">
+								<input type="text" name="" placeholder="Company">
+							</div>
+						</div>
+					</div>
+					<div class="formcontrol">
+						<button type="submit" class="btn btndesign2">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Book a Demo POPUP END -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
+<script type="text/javascript">	
+	$('.aifasterefficentslider, .clientreview').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false
+	});
+	document.addEventListener('DOMContentLoaded', () => {
+    // Initialize ScrollMagic Controller
+    let controller = new ScrollMagic.Controller();
+
+    // Create GSAP timeline
+    let timeline = gsap.timeline();
+
+    // Text rotation animations
+    timeline
+        .to('.text2, .content2', { opacity: 1, duration: 1 })
+        .to('.text1, .content1', { opacity: 0, duration: 1 }, "-=1")
+        .to('.text3, .content3', { opacity: 1, duration: 1 })
+        .to('.text2, .content2', { opacity: 0, duration: 1 }, "-=1")
+        .to('.text4, .content4', { opacity: 1, duration: 1 })
+        .to('.text3, .content3', { opacity: 0, duration: 1 }, "-=1")
+        .to('.text5, .content5', { opacity: 1, duration: 1 })
+        .to('.text4, .content4', { opacity: 0, duration: 1 }, "-=1");
+
+    // Attach the timeline to a ScrollMagic scene
+    new ScrollMagic.Scene({
+        triggerElement: ".Interoperabilitysec", // Trigger when .Interoperabilitysec enters the viewport
+        duration: 1900,
+        triggerHook: 0,
+        offset: 0,
+    })
+    
+    .setTween(timeline)
+    .setPin('.Interoperabilitysec')
+    .addTo(controller); // Add the scene to the controller
+});
+
+// Menu Open 
+$('.menutriger').click(function(){
+    $('.navbarmenu').css({
+        'visibility': 'visible',  // or use .show() if you prefer
+        'right': '0'
+    });
+});
+// Menu CLose
+$('.navbarmenu .button.close').click(function(){
+	$('.navbarmenu').css({
+        'visibility': 'hidden',  // or use .show() if you prefer
+        'right': '-100%'
+    });
+});
+// Book a Demo open
+$('.bookpopuptarget').click(function(){
+    $('.bookdemopopup').show();
+});
+// Book a Demo Close
+$('.bookdemopopup .close').click(function(){
+    $('.bookdemopopup').hide();
+});
+</script>
+<script>
+	gsap.registerPlugin(ScrollTrigger);
+
+	gsap.fromTo(".aicontent p span", 
+	    {
+	        opacity: 0.3, 
+	        y: 20 
+	    }, 
+	    {
+	        opacity: 1, 
+	        y: 0, 
+	        stagger: 0.1,
+	        duration: 2,  // Increase this value to slow down the animation
+	        scrollTrigger: {
+	            trigger: ".aicontent",
+	            start: "top 80%",  // Adjust as necessary
+	            end: "bottom 20%",
+	            scrub: 2  // Increase this value to slow down the animation
+	        }
+	    }
+	);
+
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	const marquee = gsap.to(".marquee p", {
+	    xPercent: -100,  // Moves the text to the left by 100% of its width
+	    duration: 100,    // Adjust for the desired speed of scrolling
+	    ease: "linear",  // Ensures constant speed without acceleration
+	    repeat: -1       // Infinite loop
+	});
+
+	$('.newsign').click(function(){
+	    $('.newsletteropenbox').show();
+	});
+
+	$('.newsletteropenbox .close').click(function(){
+	    $('.newsletteropenbox').hide();
+	});
+</script>
+</body>
+</html>
