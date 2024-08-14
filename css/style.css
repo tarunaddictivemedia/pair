@@ -553,7 +553,7 @@ img {
 .aiintergated .row {align-items: center;}
 .Interoperabilitysec h2.text {
     position: absolute;
-    bottom: -60px;
+    bottom: -6.5rem;
 }
 .Interoperabilitysec .heading {
     position: relative;
@@ -592,7 +592,7 @@ img {
     top: 0;
     background: #103151;
     height: 100%;
-    width: 28rem;
+    width: 39rem;
     z-index: 9;
     transition: 0.5s all ease-out;
 }
@@ -1022,7 +1022,13 @@ img {
 }
 .newsletteropenbox .newslettercol .newsletterinr  .input {
     display: flex;
+    position: relative;
     align-items: center;
+}
+.newsletteropenbox .newslettercol .newsletterinr .input .close {
+    position: absolute;
+    top: -1.5rem;cursor: pointer;
+    right: 0;
 }
 .newsletteropenbox .newslettercol .newsletterinr .input input {
     border-radius: 111px;
@@ -1031,6 +1037,7 @@ img {
     font-weight: 400;
     font-size: 1.575rem;
     height: 3.375rem;
+    min-width: 13.875rem;
     padding: 1rem 2rem;
     background: transparent;
     font-family: 'DM Sans', sans-serif;
@@ -1045,8 +1052,36 @@ img {
 .newsletteropenbox .newslettercol .newsletterinr .input input::Placeholder {
     color: #fff;
 }
+.navbarmenuinnr .navbar ul {
+    justify-content: space-between;
+}
+.navbarmenuinnr .navbar ul li {
+    margin-left: 0;
+}
+.navbarmenuinnr .navbar ul li .btn.bookpopuptarget {
+    color: #fff;
+    background: #6365b8;
+}
+.navbarmenuinnr .navbar ul li .btn.bookpopuptarget svg path {
+    fill: #6365b8;
+}
+.navbarmenuinnr .navbar ul li .btn.bookpopuptarget svg.arrows path {
+    stroke: #fff;
+}
+.navbarmenuinnr .navbar ul li .btn.bookpopuptarget svg.tlbtnbox path {
+    fill: #6365b8;
+}
+.navbarmenuinnr .navbar ul li .btn.bookpopuptarget:hover svg.tlbtnbox path {
+    fill: #6365b8 !important;
+    stroke: #6365b8 !important;
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
+    }
+}
+@media(max-width: 1440px ) {
+    html {
+        font-size: 58%;
     }
 }
