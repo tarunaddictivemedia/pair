@@ -1086,6 +1086,9 @@ img {
 div#mananima {
     text-align: center;
 }
+.faqaccordion h4:hover {
+    opacity: 0.6;
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
