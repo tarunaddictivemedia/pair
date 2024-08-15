@@ -1079,6 +1079,13 @@ img {
     width: 20rem !important;
     height: 20rem !important;
 }
+#mananima svg {
+    width: 70% !important;
+    margin: 0 auto !important;
+}
+div#mananima {
+    text-align: center;
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
