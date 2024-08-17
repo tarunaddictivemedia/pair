@@ -671,28 +671,12 @@
         autoplay: true,
         path: 'images/header.json' // Update this path
     });
-    // var animation = lottie.loadAnimation({
-    //     container: document.getElementById('icon1'),
-    //     renderer: 'svg',
-    //     loop: true,
-    //     autoplay: true,
-    //     path: 'images/icon1.json' // Update this path
-    // });
     var animation = lottie.loadAnimation({
-        container: document.getElementById('icon1'), // The container where the animation will be rendered
+        container: document.getElementById('icon1'),
         renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: '/path-to-your-json-file/blob_new.json' // Path to your Lottie JSON file
-    });
-
-    // Add hover event listeners
-    document.getElementById('icon1').addEventListener('mouseover', function() {
-        animation.goToAndPlay(0); // Play the animation on hover
-    });
-
-    document.getElementById('icon1').addEventListener('mouseout', function() {
-        animation.stop(); // Stop the animation when not hovering
+        loop: true,
+        autoplay: true,
+        path: 'images/icon1.json' // Update this path
     });
     var animation = lottie.loadAnimation({
         container: document.getElementById('icon2'),
