@@ -311,6 +311,10 @@ h1, h2 {
     color: #6365B8 !important;
     padding-right: 0;
 }
+.comprehensivepatient .iconbox ul li .icon .withouthover svg {
+    width: 10rem !important;
+    height: 10rem !important;
+}
 .comprehensivepatient .iconbox ul li .icon .withhover svg {
     width: 10rem !important;
     height: 10rem !important;
