@@ -1142,7 +1142,7 @@ div#aibottomanimation {
     z-index: -1;
     position: relative;
 }
-.heathidcardwithabhasec .container, .trustedleadingsec .contianer {
+.heathidcardwithabhasec .container, .trustedleadingsec .container {
     z-index: 2;
     position: relative;
 }
