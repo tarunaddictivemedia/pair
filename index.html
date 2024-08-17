@@ -89,7 +89,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="contentbanner">
-				<h1>Interoperable, Efficient, AI-Driven Assistance For Healthcare Assistants. </h1>
+				<h1>Interoperable, Efficient, <br>AI-Driven Assistance For Healthcare Assistants. </h1>
 				<a class="btn btndesign2" href="contact.html">Get in Touch</a>
 			</div>
 		</div>
@@ -227,7 +227,7 @@
 	<br><br><br>
 	<div class="contianer">
 		<div class="heading aihead">
-			<h2>AI-Optimized Insights</h2>
+			<h2>Ai-optimized insights with ‘ <strong>How it works</strong>’</h2>
 		</div>
 	</div>
 	 <div id="panels-slider">
@@ -676,7 +676,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'images/main.json' // Update this path
+        path: 'images/Medtech.json' // Update this path
     });
     var animation = lottie.loadAnimation({
         container: document.getElementById('mainsvg'),
@@ -779,8 +779,30 @@
 	});
 	// Video Trigger 	
 	$('.playtrigger').click(function(){
-	    $('#video').get(0).play();
+	    var video = $('#video').get(0);
+	    
+	    // Play the video
+	    video.play();
+	    
+	    // Hide the play trigger button
 	    $(this).hide();
+	    
+	    // Add controls to the video
+	    video.setAttribute('controls', 'controls');
+	});
+	$(window).on('scroll', function() {
+	    var video = $('#video').get(0);
+	    var nextSection = $('.aifasterefficentsec'); // Replace with the actual next section ID
+	    
+	    // Check if the next section is in view
+	    var sectionTop = nextSection.offset().top;
+	    var scrollTop = $(window).scrollTop();
+	    var windowHeight = $(window).height();
+
+	    // Pause the video if the next section comes into view
+	    if (scrollTop + windowHeight > sectionTop) {
+	        video.pause();
+	    }
 	});
 	$(document).ready(function(){
 	    $('.faqaccordion h4').click(function(){
