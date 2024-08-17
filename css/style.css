@@ -315,12 +315,6 @@ h1, h2 {
     width: 10rem !important;
     height: 10rem !important;
 }
-.comprehensivepatient .iconbox ul li .icon .withhover svg {
-    width: 10rem !important;
-    height: 10rem !important;
-    margin-top: -4px;
-    margin-left: -4px;
-}
 .aifasterefficentslideinnr:hover .imghover{bottom: 0;}
 .aifasterefficentslideinnr .imghover img {
     width: 100%;
