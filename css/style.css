@@ -941,6 +941,9 @@ img {
    width: 100%;
    height: 100%; 
 }
+div#circleanimation svg {
+    margin-left: -7rem;
+}
 .Interoperabilitysec h2.text {background-color: #fff;}
 #mainsvg {
     position: absolute;top: 0;left: 0;width: 100%;opacity: 0.75;
