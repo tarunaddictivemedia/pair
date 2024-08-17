@@ -90,7 +90,7 @@
 		<div class="row">
 			<div class="contentbanner">
 				<h1>Interoperable, Efficient, AI-Driven Assistance For Healthcare Assistants. </h1>
-				<a class="btn btndesign2">Get in Touch</a>
+				<a class="btn btndesign2" href="contact.html">Get in Touch</a>
 			</div>
 		</div>
 	</div>
@@ -98,7 +98,7 @@
 </div>
 <!-- main Banner end-->
 <!-- Enter the world of AI-integrated smart healthcare system. Section start -->
-<div class="aiintergated bgprop" style="background-image: url('images/aibg.png');">
+<div class="aiintergated bgprop" style="background-color: #103151;">
 	<div class="container">
 		<div class="row">
 			<div class="col-4">
@@ -120,6 +120,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="aitopanimation"></div>
 </div>
 <!-- Enter the world of AI-integrated smart healthcare system. Section End -->
 
@@ -138,7 +139,7 @@
 			<div class="col-5">
 				<div class="content">
 					<p>We are improving traditional healthcare practices by simplifying, standardizing, and automating systems of online record-keeping of patients through Ai for enhanced interoperability, and accuracy by reducing the time to make patient record keeping seamless and more organized.</p>
-					<a class="btn btndesign2">Know More</a>
+					<a class="btn btndesign2" href="feature.html">Know More</a>
 				</div>
 			</div>
 		</div>
@@ -204,10 +205,12 @@
 <!-- Healthcare Documentation Start -->
 <div class="healthdocumentationsec">
 	<div class="videoheathdocumention">
-		<video id="video" width="100%" height="100%" preload="auto" autoplay="autoplay" poster="images/videoposterheath.png">
+		<video id="video" width="100%" height="100%" preload="auto" poster="images/videoposterheath.png">
 	        <source src="images/video.mp4" />
 	    </video>
-	</div>
+	    <div class="playtrigger"><svg fill="#fff" height="70" width="70" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 60 60" xml:space="preserve"> <g> <path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30 c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15 C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"/> <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30 S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"/> </g> </svg> 
+	    </div>
+    </div>
 </div>
 <!-- Healthcare Documentation End -->
 
@@ -267,7 +270,7 @@
 <!-- aifaster Efficient End -->
 
 <!--  Health ID Card With ABHA Start -->
-<div class="heathidcardwithabhasec equalpd bgprop" style="background-image: url('images/heathbg.png');">
+<div class="heathidcardwithabhasec equalpd bgprop">
 	<div class="container">
 		<div class="row">
 			<div class="col-4">
@@ -345,12 +348,13 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
+	<div id="aimiddleanimation"></div>
 </div>
 <!--  Health ID Card With ABHA End -->
 
 <!-- Trusted by leading healthcare innovators Start -->
-<div class="trustedleadingsec bgprop equalpd" style="background-image: url(images/trustedimage.png);">
+<div class="trustedleadingsec bgprop equalpd">
 	<div class="container">
 		<div class="heading">
 			<h2>Trusted by leading healthcare innovators</h2>			
@@ -467,6 +471,8 @@
 		</div>
 		<!-- Frequently Asked Questions End -->
 	</div>
+
+	<div id="aibottomanimation"></div>
 </div>
 <!-- Trusted by leading healthcare innovators End -->
 
@@ -665,12 +671,28 @@
         autoplay: true,
         path: 'images/header.json' // Update this path
     });
+    // var animation = lottie.loadAnimation({
+    //     container: document.getElementById('icon1'),
+    //     renderer: 'svg',
+    //     loop: true,
+    //     autoplay: true,
+    //     path: 'images/icon1.json' // Update this path
+    // });
     var animation = lottie.loadAnimation({
-        container: document.getElementById('icon1'),
+        container: document.getElementById('icon1'), // The container where the animation will be rendered
         renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'images/icon1.json' // Update this path
+        loop: false,
+        autoplay: false,
+        path: '/path-to-your-json-file/blob_new.json' // Path to your Lottie JSON file
+    });
+
+    // Add hover event listeners
+    document.getElementById('icon1').addEventListener('mouseover', function() {
+        animation.goToAndPlay(0); // Play the animation on hover
+    });
+
+    document.getElementById('icon1').addEventListener('mouseout', function() {
+        animation.stop(); // Stop the animation when not hovering
     });
     var animation = lottie.loadAnimation({
         container: document.getElementById('icon2'),
@@ -699,6 +721,27 @@
         loop: true,
         autoplay: true,
         path: 'images/icon5.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('aitopanimation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/Top_banner.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('aimiddleanimation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/Middle_banner.json' // Update this path
+    });
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('aibottomanimation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/Lower_Banner.json' // Update this path
     });
 </script>
 <script type="text/javascript">	
@@ -735,6 +778,11 @@
 	// Book a Demo Close
 	$('.bookdemopopup .close').click(function(){
 	    $('.bookdemopopup').hide();
+	});
+	// Video Trigger 	
+	$('.playtrigger').click(function(){
+	    $('#video').get(0).play();
+	    $(this).hide();
 	});
 	$(document).ready(function(){
 	    $('.faqaccordion h4').click(function(){
