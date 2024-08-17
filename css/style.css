@@ -198,6 +198,7 @@ h1, h2 {
     font-size: 1.125rem;
     margin-top: 2rem;
     cursor: pointer;
+    text-decoration: none;
 }
 .btndesign2:hover {background: #103151;}
 /*aiintergated Css*/
@@ -230,8 +231,8 @@ h1, h2 {
     text-align: center;
 }
 .comprehensivepatient .iconbox ul li .icon {
-    width: 10.875rem;
-    height: 10.5rem;
+    width: 9rem;
+    height: 9rem;
     text-align: center;
     margin: 0 auto 0.188rem;
 }
@@ -286,7 +287,7 @@ h1, h2 {
     max-width: 23.688rem;
     z-index: 1;
     position: relative;
-    margin-bottom: -3.75rem;
+    margin-bottom: 1.25rem;
     transition: all 0.3s ease-in-out;
 }
 .aifasterefficentslide .aifasterefficentslideinnr:hover p {
@@ -309,10 +310,16 @@ h1, h2 {
 .aifasterefficentslideinnr .imghover {
     z-index: 0;
 }
-.aifasterefficentslideinnr:hover h4 {color: #A0CAF0;
-    margin-bottom: 1.25rem;}
+.aifasterefficentslideinnr:hover h4 {color: #A0CAF0;}
 .aifasterefficentslideinnr:hover p {
     color: #fff;
+}
+.slidecontent {
+    margin-top: 6rem;
+    transition: 0.5s all ease-in-out
+}
+.aifasterefficentslideinnr:hover .slidecontent {
+     margin-top: 0rem;
 }
 .aifasterefficentsec .heading h2 {
     font-size: 12.5rem;
@@ -931,8 +938,8 @@ img {
     z-index: -1;
     position: relative;
     height: 100%;
-     filter: blur( 5px );
-  -webkit-filter: blur( 5px );
+     filter: blur(10.050000190734863px);
+  -webkit-filter: blur(10.050000190734863px);
 }
 .aiintergated .container {position: relative;z-index: 1}
 .slick-slider .rowslide {height: 100vh; background-color: #fff;}
@@ -1076,8 +1083,8 @@ img {
     stroke: #6365b8 !important;
 }
 .Interoperabilitysec .heading .imgicon svg {
-    width: 20rem !important;
-    height: 20rem !important;
+    width: 16rem !important;
+    height: 16rem !important;
 }
 #mananima svg {
     width: 70% !important;
@@ -1088,6 +1095,23 @@ div#mananima {
 }
 .faqaccordion h4:hover {
     opacity: 0.6;
+}
+.videoheathdocumention {
+    position: relative;
+}
+.bookademocontent .formdata .formcontrol button.btn.btndesign2 {
+    margin-left: 0.5rem;
+}
+.videoheathdocumention .playtrigger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media(max-width: 1600px ) {
     html {
