@@ -1131,7 +1131,24 @@ div#aimiddleanimation {
     top: auto;
     bottom: -15rem;
 }
-
+.comprehensivepatient .iconbox ul li .icon .withouthover, .comprehensivepatient .iconbox ul li .icon .withouthover svg {
+    height: 100%;
+    width: 100%;
+}
+.comprehensivepatient .iconbox ul li .icon .withhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.comprehensivepatient .iconbox ul li:hover .icon .withouthover {
+    opacity: 1;
+}
+.comprehensivepatient .iconbox ul li:hover .withhover {
+    opacity: 1;
+}
 div#aibottomanimation {
     top: auto;
     bottom: -10rem;
