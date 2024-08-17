@@ -1144,7 +1144,7 @@ div#aimiddleanimation {
     opacity: 0;
 }
 .comprehensivepatient .iconbox ul li:hover .icon .withouthover {
-    opacity: 1;
+    opacity: 0;
 }
 .comprehensivepatient .iconbox ul li:hover .withhover {
     opacity: 1;
