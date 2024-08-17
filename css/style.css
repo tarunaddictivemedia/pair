@@ -303,6 +303,13 @@ h1, h2 {
     left: 0;
     transition: all 0.5s ease-in-out;
 }
+.aifasterefficentsec .aihead h2 {
+    font-size: 4.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 0
+    padding-right: 0;
+}
 .aifasterefficentslideinnr:hover .imghover{bottom: 0;}
 .aifasterefficentslideinnr .imghover img {
     width: 100%;
