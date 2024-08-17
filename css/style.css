@@ -234,6 +234,7 @@ h1, h2 {
     width: 9rem;
     height: 9rem;
     text-align: center;
+    position: relative;
     margin: 0 auto 0.188rem;
 }
 .comprehensivepatient .iconbox ul li .icon img {
@@ -1134,6 +1135,7 @@ div#aimiddleanimation {
 .comprehensivepatient .iconbox ul li .icon .withouthover, .comprehensivepatient .iconbox ul li .icon .withouthover svg {
     height: 100%;
     width: 100%;
+    transition: all 0.5s ease-out;
 }
 .comprehensivepatient .iconbox ul li .icon .withhover {
     position: absolute;
@@ -1142,6 +1144,7 @@ div#aimiddleanimation {
     height: 100%;
     width: 100%;
     opacity: 0;
+    transition: all 0.5s ease-in;
 }
 .comprehensivepatient .iconbox ul li:hover .icon .withouthover {
     opacity: 0;
