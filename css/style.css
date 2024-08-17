@@ -930,7 +930,7 @@ img {
 }
 .Interoperabilitysec h2.text {background-color: #fff;}
 #mainsvg {
-    position: absolute;top: 0;left: 0;width: 100%;opacity: 0.6;
+    position: absolute;top: 0;left: 0;width: 100%;opacity: 0.75;
 }
 #mainsvg svg {
     object-fit: cover !important;
@@ -1112,6 +1112,26 @@ div#mananima {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.aiintergated.bgprop, .trustedleadingsec, .heathidcardwithabhasec {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+div#aitopanimation, #aibottomanimation, #aimiddleanimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+    filter: blur(10.050000190734863px);
+    -webkit-filter: blur(10.050000190734863px);
+}
+#aitopanimation svg {
+    object-fit: cover !important;
+    width: 100% !important;
+    z-index: -1;
+    position: relative;
 }
 @media(max-width: 1600px ) {
     html {
