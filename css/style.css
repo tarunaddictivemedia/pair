@@ -1084,8 +1084,8 @@ img {
     stroke: #6365b8 !important;
 }
 .Interoperabilitysec .heading .imgicon svg {
-    width: 16rem !important;
-    height: 16rem !important;
+    width: 14rem !important;
+    height: 14rem !important;
 }
 #mananima svg {
     width: 70% !important;
@@ -1144,7 +1144,7 @@ div#aimiddleanimation {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: all 0.5s ease-in;
+    /*transition: all 0.5s ease-in;*/
 }
 .comprehensivepatient .iconbox ul li:hover .icon .withouthover {
     opacity: 0;
