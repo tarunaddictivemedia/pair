@@ -311,6 +311,12 @@ h1, h2 {
     color: #6365B8 !important;
     padding-right: 0;
 }
+.comprehensivepatient .iconbox ul li .icon .withhover svg {
+    width: 10rem !important;
+    height: 10rem !important;
+    margin-top: -4px;
+    margin-left: -4px;
+}
 .aifasterefficentslideinnr:hover .imghover{bottom: 0;}
 .aifasterefficentslideinnr .imghover img {
     width: 100%;
@@ -1152,7 +1158,7 @@ div#aimiddleanimation {
     height: 100%;
     width: 100%;
     opacity: 0;
-    /*transition: all 0.5s ease-in;*/
+    transition: all 0.5s ease-in;
 }
 .comprehensivepatient .iconbox ul li:hover .icon .withouthover {
     opacity: 0;
