@@ -1177,13 +1177,72 @@ div#aibottomanimation {
     z-index: 2;
     position: relative;
 }
+@-webkit-keyframes animation-1 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@keyframes animation-1 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@-webkit-keyframes animation-2 {
+  to {
+    background-position: -9720px 0;
+  }
+}
+@keyframes animation-2 {
+  to {
+    background-position: -9720px 0;
+  }
+}
+@-webkit-keyframes animation-3 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@keyframes animation-3 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@-webkit-keyframes animation-4 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@keyframes animation-4 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@-webkit-keyframes animation-4 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@keyframes animation-4 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@-webkit-keyframes animation-5 {
+  to {
+    background-position: -7560px 0;
+  }
+}
+@keyframes animation-5 {
+  to {
+    background-position: -7560px 0;
+  }
+}
 #icon1 {
     width: 84px; /* width of one frame */
     height: 84px; /* height of one frame */
     background-image: url('../images/sprite1.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
-    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
 }
 #icon2 {
     width: 84px; /* width of one frame */
@@ -1191,7 +1250,6 @@ div#aibottomanimation {
     background-image: url('../images/sprite2.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
-    transition: background-position 0.5s steps(9); /* adjusts steps for number of frames */
 }
 #icon3 {
     width: 84px; /* width of one frame */
@@ -1199,7 +1257,6 @@ div#aibottomanimation {
     background-image: url('../images/sprite3.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
-    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
 }
 #icon4 {
     width: 84px; /* width of one frame */
@@ -1207,7 +1264,6 @@ div#aibottomanimation {
     background-image: url('../images/sprite4.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
-    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
 }
 #icon5 {
     width: 84px; /* width of one frame */
@@ -1215,22 +1271,26 @@ div#aibottomanimation {
     background-image: url('../images/sprite5.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
-    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
 }
 .comprehensivepatient .iconbox li:hover #icon1 {
-  background-position: -7560px 0; /* adjust based on total sprite width */
+   -webkit-animation: animation 400ms steps(7, end) infinite alternate;
+    animation: animation 400ms steps(7, end) infinite alternate;
 }
 .comprehensivepatient .iconbox li:hover #icon2 {
-  background-position: -9720px 0; /* adjust based on total sprite width */
+   -webkit-animation: animation 400ms steps(9, end) infinite alternate;
+    animation: animation 400ms steps(9, end) infinite alternate;
 }
 .comprehensivepatient .iconbox li:hover #icon3{
-  background-position: -7560px 0; /* adjust based on total sprite width */
+   -webkit-animation: animation 400ms steps(7, end) infinite alternate;
+    animation: animation 400ms steps(7, end) infinite alternate;
 }
 .comprehensivepatient .iconbox li:hover #icon4 {
-  background-position: -7560px 0; /* adjust based on total sprite width */
+   -webkit-animation: animation 400ms steps(7, end) infinite alternate;
+    animation: animation 400ms steps(7, end) infinite alternate;
 }
 .comprehensivepatient .iconbox li:hover #icon5 {
-  background-position: -7560px 0; /* adjust based on total sprite width */
+   -webkit-animation: animation 400ms steps(7, end) infinite alternate;
+    animation: animation 400ms steps(7, end) infinite alternate;
 }
 @media(max-width: 1600px ) {
     html {
