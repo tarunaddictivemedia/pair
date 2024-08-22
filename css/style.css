@@ -1177,6 +1177,11 @@ div#aibottomanimation {
     z-index: 2;
     position: relative;
 }
+.aifasterefficentslider .aifasterefficentslide:nth-child(even) .imghover img {
+    transform: rotateX(180deg);
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
