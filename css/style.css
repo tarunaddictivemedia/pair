@@ -1177,7 +1177,7 @@ div#aibottomanimation {
     z-index: 2;
     position: relative;
 }
-.icon-1 {
+.icon1, .icon2, .icon3, .icon4, .icon5 {
     width: 100px; /* width of one frame */
     height: 100px; /* height of one frame */
     background-image: url('./images/sprite1.png'); /* your sprite image */
@@ -1185,7 +1185,11 @@ div#aibottomanimation {
     background-repeat: no-repeat;
     transition: background-position 0.5s steps(4); /* adjusts steps for number of frames */
 }
-.comprehensivepatient .iconbox li:hover .icon-1 {
+.comprehensivepatient .iconbox li:hover .icon1,
+.comprehensivepatient .iconbox li:hover .icon2,
+.comprehensivepatient .iconbox li:hover .icon3,
+.comprehensivepatient .iconbox li:hover .icon4,
+.comprehensivepatient .iconbox li:hover .icon5 {
   background-position: -1080px 0; /* adjust based on total sprite width */
 }
 @media(max-width: 1600px ) {
