@@ -1177,6 +1177,17 @@ div#aibottomanimation {
     z-index: 2;
     position: relative;
 }
+.icon-1 {
+    width: 100px; /* width of one frame */
+    height: 100px; /* height of one frame */
+    background-image: url('./images/sprite1.png'); /* your sprite image */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s steps(4); /* adjusts steps for number of frames */
+}
+.comprehensivepatient .iconbox li:hover .icon-1 {
+  background-position: -1080px 0; /* adjust based on total sprite width */
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
