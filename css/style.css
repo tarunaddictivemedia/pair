@@ -1180,7 +1180,7 @@ div#aibottomanimation {
 #icon1 {
     width: 84px; /* width of one frame */
     height: 84px; /* height of one frame */
-    background-image: url('./images/sprite1.png'); /* your sprite image */
+    background-image: url('../images/sprite1.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
     transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
@@ -1188,7 +1188,7 @@ div#aibottomanimation {
 #icon2 {
     width: 84px; /* width of one frame */
     height: 84px; /* height of one frame */
-    background-image: url('./images/sprite2.png'); /* your sprite image */
+    background-image: url('../images/sprite2.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
     transition: background-position 0.5s steps(9); /* adjusts steps for number of frames */
@@ -1196,7 +1196,7 @@ div#aibottomanimation {
 #icon3 {
     width: 84px; /* width of one frame */
     height: 84px; /* height of one frame */
-    background-image: url('./images/sprite3.png'); /* your sprite image */
+    background-image: url('../images/sprite3.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
     transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
@@ -1204,7 +1204,7 @@ div#aibottomanimation {
 #icon4 {
     width: 84px; /* width of one frame */
     height: 84px; /* height of one frame */
-    background-image: url('./images/sprite4.png'); /* your sprite image */
+    background-image: url('../images/sprite4.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
     transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
@@ -1212,7 +1212,7 @@ div#aibottomanimation {
 #icon5 {
     width: 84px; /* width of one frame */
     height: 84px; /* height of one frame */
-    background-image: url('./images/sprite5.png'); /* your sprite image */
+    background-image: url('../images/sprite5.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
     transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
