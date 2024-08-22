@@ -1177,20 +1177,60 @@ div#aibottomanimation {
     z-index: 2;
     position: relative;
 }
-#icon1, #icon2, #icon3, #icon4, #icon5 {
-    width: 100px; /* width of one frame */
-    height: 100px; /* height of one frame */
+#icon1 {
+    width: 84px; /* width of one frame */
+    height: 84px; /* height of one frame */
     background-image: url('./images/sprite1.png'); /* your sprite image */
     background-position: 0 0;
     background-repeat: no-repeat;
-    transition: background-position 0.5s steps(4); /* adjusts steps for number of frames */
+    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
 }
-.comprehensivepatient .iconbox li:hover #icon1,
-.comprehensivepatient .iconbox li:hover #icon2,
-.comprehensivepatient .iconbox li:hover #icon3,
-.comprehensivepatient .iconbox li:hover #icon4,
+#icon2 {
+    width: 84px; /* width of one frame */
+    height: 84px; /* height of one frame */
+    background-image: url('./images/sprite2.png'); /* your sprite image */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s steps(9); /* adjusts steps for number of frames */
+}
+#icon3 {
+    width: 84px; /* width of one frame */
+    height: 84px; /* height of one frame */
+    background-image: url('./images/sprite3.png'); /* your sprite image */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
+}
+#icon4 {
+    width: 84px; /* width of one frame */
+    height: 84px; /* height of one frame */
+    background-image: url('./images/sprite4.png'); /* your sprite image */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
+}
+#icon5 {
+    width: 84px; /* width of one frame */
+    height: 84px; /* height of one frame */
+    background-image: url('./images/sprite5.png'); /* your sprite image */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s steps(7); /* adjusts steps for number of frames */
+}
+.comprehensivepatient .iconbox li:hover #icon1 {
+  background-position: -7560px 0; /* adjust based on total sprite width */
+}
+.comprehensivepatient .iconbox li:hover #icon2 {
+  background-position: -9720px 0; /* adjust based on total sprite width */
+}
+.comprehensivepatient .iconbox li:hover #icon3{
+  background-position: -7560px 0; /* adjust based on total sprite width */
+}
+.comprehensivepatient .iconbox li:hover #icon4 {
+  background-position: -7560px 0; /* adjust based on total sprite width */
+}
 .comprehensivepatient .iconbox li:hover #icon5 {
-  background-position: -1080px 0; /* adjust based on total sprite width */
+  background-position: -7560px 0; /* adjust based on total sprite width */
 }
 @media(max-width: 1600px ) {
     html {
