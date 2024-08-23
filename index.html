@@ -678,37 +678,54 @@
         path: 'images/header.json' // Update this path
     });
     var animationiconone = lottie.loadAnimation({
-        container: document.getElementById('icon1'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        path: 'images/icon1.json' // Update this path
-    });
+	    container: document.getElementById('icon1'),
+	    renderer: 'svg',
+	    loop: true,
+	    autoplay: false,
+	    path: 'images/icon1.json' // Update this path
+	});
+
+	// Preload first frame
+	animationiconone.goToAndStop(0, true);
+
 	// Play the animation on hover
 	document.getElementById('iconhover1').addEventListener('mouseover', function() {
-		animationiconone.play();
+	    requestAnimationFrame(function() {
+	        animationiconone.play();
+	    });
 	});
 
-	// Stop the animation when not hovering
+	// Pause the animation when not hovering
 	document.getElementById('iconhover1').addEventListener('mouseout', function() {
-		animationiconone.stop();
-	});
-    var animationtwo = lottie.loadAnimation({
-        container: document.getElementById('icon2'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        path: 'images/icon2.json' // Update this path
-    });
-	// Play the animation on hover
-	document.getElementById('iconhover2').addEventListener('mouseover', function() {
-		animationtwo.play();
+	    requestAnimationFrame(function() {
+	        animationiconone.pause();
+	    });
 	});
 
-	// Stop the animation when not hovering
-	document.getElementById('iconhover2').addEventListener('mouseout', function() {
-		animationtwo.stop();
+	// Repeat similar for other animations
+	var animationtwo = lottie.loadAnimation({
+	    container: document.getElementById('icon2'),
+	    renderer: 'svg',
+	    loop: true,
+	    autoplay: false,
+	    path: 'images/icon2.json' // Update this path
 	});
+	animationtwo.goToAndStop(0, true);
+
+	document.getElementById('iconhover2').addEventListener('mouseover', function() {
+	    requestAnimationFrame(function() {
+	        animationtwo.play();
+	    });
+	});
+
+	document.getElementById('iconhover2').addEventListener('mouseout', function() {
+	    requestAnimationFrame(function() {
+	        animationtwo.pause();
+	    });
+	});
+
+	// Similar code for other icons
+
     var animationthree = lottie.loadAnimation({
         container: document.getElementById('icon3'),
         renderer: 'svg',
