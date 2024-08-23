@@ -733,14 +733,21 @@
         autoplay: false,
         path: 'images/icon3.json' // Update this path
     });
+	// Preload first frame
+	animationthree.goToAndStop(0, true);
+
 	// Play the animation on hover
 	document.getElementById('iconhover3').addEventListener('mouseover', function() {
-		animationthree.play();
+	    requestAnimationFrame(function() {
+	        animationthree.play();
+	    });
 	});
 
-	// Stop the animation when not hovering
+	// Pause the animation when not hovering
 	document.getElementById('iconhover3').addEventListener('mouseout', function() {
-		animationthree.stop();
+	    requestAnimationFrame(function() {
+	        animationthree.pause();
+	    });
 	});
     var animationfour = lottie.loadAnimation({
         container: document.getElementById('icon4'),
@@ -749,14 +756,21 @@
         autoplay: false,
         path: 'images/icon4.json' // Update this path
     });
+	// Preload first frame
+	animationfour.goToAndStop(0, true);
+
 	// Play the animation on hover
 	document.getElementById('iconhover4').addEventListener('mouseover', function() {
-		animationfour.play();
+	    requestAnimationFrame(function() {
+	        animationfour.play();
+	    });
 	});
 
-	// Stop the animation when not hovering
+	// Pause the animation when not hovering
 	document.getElementById('iconhover4').addEventListener('mouseout', function() {
-		animationfour.stop();
+	    requestAnimationFrame(function() {
+	        animationfour.pause();
+	    });
 	});
     var animationfive = lottie.loadAnimation({
         container: document.getElementById('icon5'),
@@ -765,14 +779,21 @@
         autoplay: false,
         path: 'images/icon5.json' // Update this path
     });
+	// Preload first frame
+	animationfive.goToAndStop(0, true);
+
 	// Play the animation on hover
 	document.getElementById('iconhover5').addEventListener('mouseover', function() {
-		animationfive.play();
+	    requestAnimationFrame(function() {
+	        animationfive.play();
+	    });
 	});
 
-	// Stop the animation when not hovering
+	// Pause the animation when not hovering
 	document.getElementById('iconhover5').addEventListener('mouseout', function() {
-		animationfive.stop();
+	    requestAnimationFrame(function() {
+	        animationfive.pause();
+	    });
 	});
     var animation = lottie.loadAnimation({
         container: document.getElementById('aitopanimation'),
