@@ -452,16 +452,16 @@ $('.bookdemopopup .close').click(function(){
 	    ease: "linear",  // Ensures constant speed without acceleration
 	    repeat: -1       // Infinite loop
 	});
-// Slick Slider Initialization
-jQuery(".slick-slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  speed: 1000,
-  infinite: false, // Set infinite to false for better control
-  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-  arrows: false
-});
+	// Slick Slider Initialization
+	jQuery(".slick-slider").slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  fade: true,
+	  speed: 1000,
+	  infinite: true,
+	  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+	  arrows: false
+	});
 
 // Slick Scroll Logic
 jQuery(function () {
@@ -472,38 +472,24 @@ jQuery(function () {
     e.preventDefault();
 
     if (!scrollInProgress) {
-      const currentSlide = slider.slick('slickCurrentSlide');
-      const lastSlideIndex = slider.slick('getSlick').slideCount - 1;
-
       if (e.originalEvent.deltaY < 0) {
-        // Scroll up
-        if (currentSlide !== 0) {
-          slider.slick("slickPrev");
-        }
+        jQuery(this).slick("slickPrev");
       } else {
-        // Scroll down
-        if (currentSlide !== lastSlideIndex) {
-          slider.slick("slickNext");
-        } else {
-          // Allow page scroll after reaching the last slide
-          $('html, body').animate({
-            scrollTop: $('#fastereasirbg').offset().top
-          }, 1000); // Adjust the scroll duration as needed
-        }
+        jQuery(this).slick("slickNext");
       }
     }
   });
 
-  // Disable scroll wheel on slider after last slide is reached
-  slider.on('afterChange', function (event, slick, currentSlide) {
-    if (currentSlide === slick.slideCount - 1) {
-      scrollInProgress = true;  // Stop slider scroll
-    } else {
-      scrollInProgress = false; // Re-enable slider scroll
-    }
-  });
+  // After Change Event
+  
+  $('.slick-slider').on('afterChange', function(event, slick, currentSlide){
+        if (currentSlide === slick.slideCount - 1) {
+            $('html, body').animate({
+                scrollTop: $('#fastereasirbg').offset().top
+            }, 1000); // Adjust the scroll duration as needed
+        }
+    });
 });
-
 
 $('.newsign').click(function(){
     $('.newsletteropenbox').show();
