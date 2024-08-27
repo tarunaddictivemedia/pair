@@ -262,7 +262,7 @@ h1, h2 {
     padding-left: 10.313rem;
 }
 .aifasterefficentsec {
-    background-color: #F8F8F5;
+    background-color: #F1F1EB;
 }
 .aifasterefficentslide {
     height: 20.25rem;
@@ -338,7 +338,7 @@ h1, h2 {
 }
 /*heathidcardwithabhasec CSS*/
 .heathidcardwithabhasec .aifasterefficentslider {padding-left: 0;padding-top: 7.75rem;}
-.heathidcardwithabhasec { background-color : #F8F8F5;}
+.heathidcardwithabhasec { background-color : #F1F1EB;}
 .heathidcardwithabhasec .headingcntnt h4 {
     font-size: 3rem;
     color: #000;
@@ -718,7 +718,7 @@ img {
 }
 .bookademocontent .formdata .formcontrol .forminput input, .bookademocontent .formdata .formcontrol .forminput textarea {
     border-radius: 1044px;
-    background: #F8F8F5;
+    background: #F1F1EB;
     color: #757265;
     font-style: normal;
     font-family: 'DM Sans', sans-serif;
