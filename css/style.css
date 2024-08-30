@@ -110,7 +110,7 @@ header .logo img {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 .button .btn:hover svg.tlbtnbox {
     opacity: 1;
@@ -128,8 +128,9 @@ svg.tlbtnbox {
     background: transparent;
 }
 .button .btn svg.arrows {
-    right: -12px;
+    right: -7px;
     position: relative;
+    margin-left: 7px;
 }
 .navbar ul li {
     margin-left: 2.375rem;
