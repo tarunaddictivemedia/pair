@@ -1182,6 +1182,11 @@ div#aibottomanimation {
     transition: transform 0.6s ease-in-out;
     transform-style: preserve-3d;
 }
+@media(max-width: 1920px) {
+    html {
+        font-size: 75%;
+    }
+}
 @media(max-width: 1600px ) {
     html {
         font-size: 68%;
