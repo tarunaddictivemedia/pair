@@ -355,7 +355,7 @@ h1, h2 {
     display: block;
 }
 p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     color: #000;
 }
 .easysteps ul li {
@@ -1184,16 +1184,16 @@ div#aibottomanimation {
 }
 @media(max-width: 1920px) {
     html {
-        font-size: 96%;
+        font-size: 82%;
     }
 }
 @media(max-width: 1600px ) {
     html {
-        font-size: 68%;
+        font-size: 75%;
     }
 }
 @media(max-width: 1440px ) {
     html {
-        font-size: 58%;
+        font-size: 62%;
     }
 }
