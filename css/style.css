@@ -110,7 +110,7 @@ header .logo img {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
 }
 .button .btn:hover svg.tlbtnbox {
     opacity: 1;
