@@ -179,24 +179,6 @@
 					</div>			
 				</div>
 			</div>
-			<div class="rowslide">
-				<div class="row">
-					<div class="col-45">
-						<div class="heading">
-							<div class="imgicon">
-								<div id="icon5"></div>
-							</div>
-							<h2 class="text text5">  Referral & Intakes</h2>
-						</div>	
-					</div>	
-
-					<div class="col-5">
-						<div class="content">
-							<p  class="contentdb content5">We understand the need to protect your patient data is crucial for your business. Hence, our team ensures complete HIPAA and HL7/FHIR compliance with the latest government standards, to provide you complete data privacy and end-to-end encryption, so providers can focus on delivering care with peace of mind. </p>
-						</div>	
-					</div>			
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -470,44 +452,53 @@ $('.bookdemopopup .close').click(function(){
 	    ease: "linear",  // Ensures constant speed without acceleration
 	    repeat: -1       // Infinite loop
 	});
-	// Slick Slider Initialization
 	jQuery(".slick-slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  speed: 1000,
-  infinite: true,
-  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-  arrows: false
-});
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  fade: true,
+	  speed: 1000,
+	  infinite: true,
+	  cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+	  arrows: false
+	});
 
-// Slick Scroll Logic
-jQuery(function () {
-  const slider = jQuery(".slick-slider");
-  let scrollInProgress = false;
+	jQuery(function () {
+	  const slider = jQuery(".slick-slider");
+	  let scrollInProgress = false;
 
-  slider.on("wheel", function (e) {
-    e.preventDefault();
+	  slider.on("wheel", function (e) {
+	    e.preventDefault();
 
-    if (!scrollInProgress) {
-      if (e.originalEvent.deltaY < 0) {
-        jQuery(this).slick("slickPrev");
-      } else {
-        jQuery(this).slick("slickNext");
-      }
-    }
-  });
+	    if (!scrollInProgress) {
+	      if (e.originalEvent.deltaY < 0) {
+	        jQuery(this).slick("slickPrev");
+	      } else {
+	        jQuery(this).slick("slickNext");
+	      }
+	    }
+	  });
 
-  // After Change Event
-  
-  $('.slick-slider').on('afterChange', function(event, slick, currentSlide){
-        if (currentSlide === slick.slideCount - 1) {
-            $('html, body').animate({
-                scrollTop: $('#fastereasirbg').offset().top
-            }, 1000); // Adjust the scroll duration as needed
-        }
-    });
-});
+	  // Check if the last slide is reached and only allow manual scroll
+	  $('.slick-slider').on('afterChange', function(event, slick, currentSlide) {
+	    if (currentSlide === slick.slideCount - 1) {
+	      // You are on the last slide, add a class or other indicator to enable manual scroll
+	      // Remove any automatic scrolling here
+	      $(document).on('wheel', function(e) {
+	        if (e.originalEvent.deltaY > 0) { // Scroll down
+	          $('html, body').animate({
+	            scrollTop: $('#fastereasirbg').offset().top
+	          }, 1000); // Adjust the scroll duration as needed
+	          // Unbind to prevent it from triggering again while in the same section
+	          $(document).off('wheel');
+	        }
+	      });
+	    } else {
+	      // Unbind any previous wheel event listener if not on the last slide
+	      $(document).off('wheel');
+	    }
+	  });
+	});
+
 
 $('.newsign').click(function(){
     $('.newsletteropenbox').show();
