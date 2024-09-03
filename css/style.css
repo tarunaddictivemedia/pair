@@ -398,8 +398,9 @@ p {
     width: 9.188rem;
     height: 9.188rem;
     margin: 0 auto;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
+.trustedlogo .trustedlogocol .innvoaterlogo svg {width: 100%; height: 100%;}
 .trustedlogo .trustedlogocol .innvoaterlogo img {
     width: 100%;
     height: 100%;
@@ -541,12 +542,12 @@ footer .footermenu .leftcol ul li a {
     overflow: hidden;
     z-index: 1;
     cursor: pointer;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 .easysteps {
     margin-bottom: 4rem;
 }
-.footermenu .rightcol .btnbox .btn .arrows{right: -11px;    position: relative;}
+.footermenu .rightcol .btnbox .btn .arrows{right: -5px;    position: relative;    margin-left: 6px;}
 .footermenu .rightcol .btnbox .btn:hover svg.tlbtnbox {display: block !important;}
 .footermenu .rightcol .btnbox .btn:hover {background: transparent;}
 /*Feature Css*/
